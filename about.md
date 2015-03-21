@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I'm currently doing a PhD in sport science, working in the [Department of Sport Science at Lillehammer University College](http://www.hil.no/forskning/forskningsomraader/idrett). I'm enrolled in the PhD-program at the [Swedish School of Sport and Health Sciences](http://www.gih.se "GIH"). 
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Our group is focused on understanding how physical activity, and the lack thereof is affecting us from the molecular level to overall function and performance. My thesis project aims at understanding the basis of individualized training prescriptions. 
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+This blog will hopefully cover some of my research activities. Stay tuned! 
