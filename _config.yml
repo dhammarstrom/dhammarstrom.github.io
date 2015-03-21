@@ -1,0 +1,12 @@
+# Site settings
+title: my blog - Daniel Hammarström
+email: dhammarstrom@hotmail.se
+description: > # this means to ignore newlines until "baseurl:"
+  my blog - about science, sports, doing a phd...
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://dhammarstrom.github.io" # the base hostname & protocol for your site
+twitter_username: dhammarstrom
+github_username:  dhammarstrom
+
+# Build settings
+markdown: kramdown
