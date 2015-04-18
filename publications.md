@@ -4,4 +4,4 @@ title: Publications
 permalink: /publication/
 ---
 
-To be updated...
+[pubmed](http://www.ncbi.nlm.nih.gov/pubmed/?term=hammarstr%C3%B6m+d)
