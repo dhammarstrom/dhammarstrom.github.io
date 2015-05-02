@@ -5,7 +5,7 @@ date:   2015-04-19 12:00
 categories: r-scripts 
 ---
 
-Recently I've been giving feedback to participants in some of the training interventions we have been running this winter. This involved reducing dataset to the particular participant and summarized reference values for comparison and then create an individualized report based on those numbers. The report I created consisted of some information on the data we had collected and what it tells us about that particular participant. 
+Recently I've been giving feedback to participants in some of the training interventions we have been running this winter. This involved reducing datasets to the particular participant and summarise reference values for comparison and then create an individualized report based on those numbers. The report I created consisted of some information on the data we had collected and what it tells us about that particular participant. 
 
 A couple of years ago I would do this whole operation in an excel/word-to-pdf workflow, this would mean a lot of copy-paste operations with the risk of all the time messing it up. Now I used [R](http://http://www.r-project.org/)! I thought I would share it here.
 
