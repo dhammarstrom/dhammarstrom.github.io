@@ -1,8 +1,8 @@
 # Site settings
-title: life as a PhD student
+title: Daniel Hammarström
 email: dhammarstrom@hotmail.se
 description: > # this means to ignore newlines until "baseurl:"
-  The blog will cover my research activities within the feild of sport science. 
+  The site will cover my research activities within the feild of sport science. 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://dhammarstrom.github.io" # the base hostname & protocol for your site
 twitter_username: dhammarstrom
