@@ -1,6 +1,5 @@
 project:
   type: website
-  output-dir: docs
 
 website:
   title: "Notes on science etc."
@@ -18,7 +17,7 @@ website:
 format:
   html:
     theme: cosmo
-    css: styles.css
+    css: [styles.css, styles-custom.scss]
 
 
 
