@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Notes on science etc."
+  navbar:
+    left:
+      - about.qmd
+      - research.qmd
+      - teaching.qmd
+    right:
+      - icon: github
+        href: https://dhammarstrom.github.com/
+      - icon: mastodon
+        href: https://mastodon.social/@dhammarstrom
+        aria-label: Mastodon
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+
+

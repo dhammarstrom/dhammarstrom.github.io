@@ -1,0 +1,20 @@
+---
+title: "A new attempt at a website"
+author: "Daniel Hammarström"
+date: "2023-11-02"
+categories: [news, blog, notes]
+image: a-new-start.png
+---
+
+My previous attempts at maintaining a website have been failures. Why? Probably because the format triggers a non-trivial amount of bad academic habits and feelings like procrastination, focusing on unimportant details, seeking perfection, inferiority complex and so on. Another issue was probably that I (still) do not know how would like to read these notes.
+
+My new attempt therefore has the following basic rules.
+
+- Write short posts.
+- Write for my own memory.
+- Add/link stuff that I've done.
+- Do not over-think posts.  
+
+Great, the first post is done!
+
+
