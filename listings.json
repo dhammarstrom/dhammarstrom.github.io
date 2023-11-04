@@ -4,5 +4,11 @@
     "items": [
       "/posts/a-new-start/index.html"
     ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/a-new-start/index.html"
+    ]
   }
 ]
