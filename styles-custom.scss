@@ -3,20 +3,18 @@
   @return "rgb(" + red($color) + ", " + green($color) + ", " + blue($color)+ ")";
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Pixelify+Sans:wght@400;500;600&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
 
-$font-family-sans-serif: 'Montserrat', sans-serif;
 
 
 
 
 /*-- scss:defaults --*/
-/*-- scss:defaults --*/
-$primary:  #06436e !default;
-$font-family-base:  'Source Sans Pro',  'Lato', 'Merriweather', 'Roboto Regular', 'Cabin Regular' !default;
-$body-color: $gray-700 !default;
-$headings-font-family:  'Prata', 'Roboto', 'Playfair Display', 'Montserrat'    !default;
+$h2-font-size:          1.6rem !default;
+$headings-font-weight:  500 !default;
+$body-color:            $gray-700 !default;
 
+$font-family-sans-serif: "Titillium";
 
 /*-- scss:rules --*/
 h1, h2, h3, h4, h5, h6 {

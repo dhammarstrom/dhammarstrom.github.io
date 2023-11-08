@@ -7,25 +7,18 @@
     "text": "My teaching"
   },
   {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "My research",
+    "objectID": "posts/good-science/index.html",
+    "href": "posts/good-science/index.html",
+    "title": "Better, transparent science",
     "section": "",
-    "text": "My research"
-  },
-  {
-    "objectID": "posts/a-new-start/index.html",
-    "href": "posts/a-new-start/index.html",
-    "title": "A new attempt at a website",
-    "section": "",
-    "text": "My previous attempts at maintaining a website have been failures. Why? Probably because the format triggers a non-trivial amount of bad academic habits and feelings like procrastination, focusing on unimportant details, seeking perfection, inferiority complex and so on. Another issue was probably that I (still) do not know who would like to read these notes.\nMy new attempt therefore has the following basic rules.\n\nWrite short posts.\nWrite for my own memory.\nAdd/link stuff that I’ve done.\nDo not over-think posts.\n\nGreat, the first post is done!"
+    "text": "Today, in our department’s weekly lunch seminar, we discussed how to start and finish a scientific paper. A summary of the main topic of discussion is that you need to decide on a strategy and then start writing. It does not matter if you start with the abstract, the figures, the methods, or the main results. Ideally, you select a journal before you start writing to ensure you do not need to revise or restructure before the first submission.\nI think that this is, however, secondary to another related point, which is that your paper is only one potential output from your science project. Other outputs could be the data set and the source code used to generate the paper. These could be combined in a version-controlled repository and made public as a way of being transparent about the whole process.\nAiming for transparency affects the way you think about preparing your manuscript. Writing the source files for the manuscripts invites you to explain how and why you have prepared and analyzed data the way you did. To align the manuscript to the source file, you might need to drop some troublesome ideals of scientific writing. One such ideal is the tendency to build a scientific investigation on a (genius) hypothesis. This hypothesis is, of course, formulated before collecting any data and confirmed in the paper. In reality, many papers do not have a pre-data hypothesis; it is probably made up to fit the format of hypothesis-driven research, a practice known as HARKing.\nIt is not that I do not like hypothesis-driven research; it’s just that if you wish to test a hypothesis, this should be done formally. This might include publishing a detailed background and analysis plan with pilot data or simulations. Deviations from the plan are OK, as reality might differ from assumptions, and such deviations are also a way of learning about the phenomena we are studying.\nHypothesis-generating or descriptive research can also help us learn about our phenomena. All research does not need a pre-formulated hypothesis, and more papers should have been written without one. A project in which we learn stuff as we explore the data naturally does not contain a single pre-formulated hypothesis. Aligning the wording of a manuscript to the process of writing it is a benefit of working not only on your manuscript but on the whole scientific process. This process is ideally documented in a public repository.\nLet us aim to be open about our shortcomings. I have most likely contributed to projects that were not fully transparent and included some version of HARKing in the past. However, I hope the next project I’m involved in is a little bit better than the last one in terms of transparency. Small steps are better than no steps."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Daniel Hammarström",
     "section": "",
-    "text": "A profile picture\n\n\nAbout\nI’m an Associate Professor at the Inland University of Applied Sciences, where my research interests revolves around uncovering factors that contribute to the diverse responses individuals exhibit to exercise training. My investigative approach is interdisciplinary, weaving together physiology, statistical methods and bioinformatics in studies of exercise training.\nIn the realm of academics, I am involved in teaching research methods with focus on statistics and molecular biology as part of our Health and Exercise Physiology Master’s program. Additionally, I mentor students at various levels, overseeing the academic and research progression of Bachelor’s, Master’s, and Ph.D. candidates.\nI’m part of the trainome research group, collectively we want to better understand why and how people responds to exercise training and find out how we can design better exercise training interventions for different populations.\nYou can read my blog below or find me on Twitter, Mastodon or GitHub.\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nA new attempt at a website\n\n\n\n\n\n\n\nnews\n\n\nblog\n\n\nnotes\n\n\n\n\n\n\n\n\n\n\n\nNov 2, 2023\n\n\nDaniel Hammarström\n\n\n\n\n\n\nNo matching items"
+    "text": "Better, transparent science\n\n\n\n\n\nNotes on transparent science\n\n\n\n\n\n\nNov 8, 2023\n\n\nDaniel Hammarström\n\n\n\n\n\n\n  \n\n\n\n\nA new attempt at a website\n\n\n\n\n\n\n\nnews\n\n\nblog\n\n\nnotes\n\n\n\n\n\n\n\n\n\n\n\nNov 2, 2023\n\n\nDaniel Hammarström\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -35,10 +28,17 @@
     "text": "About this blog"
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Notes on science etc.",
+    "objectID": "posts/a-new-start/index.html",
+    "href": "posts/a-new-start/index.html",
+    "title": "A new attempt at a website",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nA new attempt at a website\n\n\n\n\n\n\n\nnews\n\n\nblog\n\n\nnotes\n\n\n\n\n\n\n\n\n\n\n\nNov 2, 2023\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+    "text": "My previous attempts at maintaining a website have been failures. Why? Probably because the format triggers a non-trivial amount of bad academic habits and feelings like procrastination, focusing on unimportant details, seeking perfection, inferiority complex and so on. Another issue was probably that I (still) do not know how would like to read these notes.\nMy new attempt therefore has the following basic rules.\n\nWrite short posts.\nWrite for my own memory.\nAdd/link stuff that I’ve done.\nDo not over-think posts.\n\nGreat, the first post is done!"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "My research",
+    "section": "",
+    "text": "My research"
   }
 ]
