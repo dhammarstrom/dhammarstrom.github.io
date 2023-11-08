@@ -1,0 +1,16 @@
+---
+title: "Better, transparent science"
+description: "Notes on transparent science"
+author: "Daniel Hammarström"
+date: "2023-11-08"
+draft: true
+---
+
+Today in our departments weekly lunch seminar we discussed how to start and finish a scientific paper. My summary of the main topic of discussion is that you just need to decide on a strategy and then start writing. It does not matter if you start with the abstract, the figures, methods or the main results. Ideally you select a journal before you start writing to be sure that you do not need to revise or restructure before first submission.
+
+I think that this is however secondary to another related point that is that your paper is only one potential output from your science project. Other outputs could be the data set and the source code used to generate the paper. These could be combined in a version controlled repository and made public as a way of being transparent about the whole process.
+
+Aiming for transparency affects the way you think about preparing your manuscript. Writing the source files for the manuscripts invites you to explain how and why you have prepared and analyzed data the way you did. To align the manuscript to the source file you might need to drop some troublesome ideals of scientific writing. One such ideal is the tendency to build a scientific investigation on a (genius) hypothesis. This hypothesis is of course formulated in advance of collecting any data and confirmed in the paper. In reality, many papers do not have a pre-data hypothesis, it is probably made up to fit the format of hypothesis driven research, a practice known as [HARKing](https://en.wikipedia.org/wiki/HARKing).
+
+It is not that I do not like hypothesis-driven research, it's just that if you wish to test an hypothesis this should be done in a formal manner. This might include publishing a detailed background and analysis plan together with pilot data or simulations. Deviations from the plan are OK as reality might differ from assumptions, and deviations are also a way of learning about the phenomena we are studying. Hypothesis-generating    
+
