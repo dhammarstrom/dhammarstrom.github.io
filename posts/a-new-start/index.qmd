@@ -6,7 +6,7 @@ categories: [news, blog, notes]
 image: a-new-start.png
 ---
 
-My previous attempts at maintaining a website have been failures. Why? Probably because the format triggers a non-trivial amount of bad academic habits and feelings like procrastination, focusing on unimportant details, seeking perfection, inferiority complex and so on. Another issue was probably that I (still) do not know how would like to read these notes.
+My previous attempts at maintaining a website have been failures. Why? Probably because the format triggers a non-trivial amount of bad academic habits and feelings like procrastination, focusing on unimportant details, seeking perfection, inferiority complex and so on. Another issue was probably that I (still) do not know who would like to read these notes.
 
 My new attempt therefore has the following basic rules.
 

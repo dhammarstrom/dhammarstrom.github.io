@@ -5,7 +5,8 @@ website:
   title: "Notes on science etc."
   navbar:
     left:
-      - about.qmd
+      - text: Blog
+        href: blog.qmd
       - research.qmd
       - teaching.qmd
     right:
@@ -17,7 +18,7 @@ website:
 format:
   html:
     theme: cosmo
-    css: [styles.css, styles-custom.scss]
+    css: [styles-custom.scss]
 
 
 
