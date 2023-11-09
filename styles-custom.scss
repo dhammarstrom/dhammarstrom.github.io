@@ -1,22 +1,54 @@
-/*-- scss:functions --*/
-@function colorToRGB ($color) {
-  @return "rgb(" + red($color) + ", " + green($color) + ", " + blue($color)+ ")";
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Lobster&display=swap');
+
+// Define color variables
+$primary-color: #3498db; // A nice blue
+$secondary-color: #2ecc71; // A fresh green
+$tertiary-color: #f1c40f; // A warm yellow
+$light-color: #ecf0f1; // A light grayish color
+$dark-color: #34495e; // A dark blue color
+
+// Define font variables
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Lobster', cursive;
+
+// Base body styling
+body {
+  font-family: $primary-font;
+  color: $dark-color;
+  background-color: $light-color;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
-
-
-
-
-
-/*-- scss:defaults --*/
-$h2-font-size:          1.6rem !default;
-$headings-font-weight:  500 !default;
-$body-color:            $gray-700 !default;
-
-$font-family-sans-serif: "Titillium";
-
-/*-- scss:rules --*/
+// Headings
 h1, h2, h3, h4, h5, h6 {
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
+  font-family: $secondary-font;
+  color: $primary-color;
 }
+
+// Links
+a {
+  color: $primary-color;
+  text-decoration: none;
+  
+  &:hover {
+    color: $secondary-color;
+    text-decoration: underline;
+  }
+}
+
+// Buttons
+button {
+  background-color: $primary-color;
+  color: $light-color;
+  border: none;
+  padding: 10px 20px;
+  font-family: $primary-font;
+  font-size: 1rem;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
+// Other specific classes can be added below as needed

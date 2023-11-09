@@ -5,5 +5,12 @@
       "/posts/good-science/index.html",
       "/posts/a-new-start/index.html"
     ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/good-science/index.html",
+      "/posts/a-new-start/index.html"
+    ]
   }
 ]
