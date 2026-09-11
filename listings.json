@@ -1,14 +1,20 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/publications.html",
+    "items": []
+  },
+  {
+    "listing": "/blog.html",
     "items": [
+      "/posts/sad-story/index.html",
       "/posts/good-science/index.html",
       "/posts/a-new-start/index.html"
     ]
   },
   {
-    "listing": "/blog.html",
+    "listing": "/index.html",
     "items": [
+      "/posts/sad-story/index.html",
       "/posts/good-science/index.html",
       "/posts/a-new-start/index.html"
     ]

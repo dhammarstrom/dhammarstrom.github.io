@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>teaching</title>
+<title>Publications</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,6 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -74,7 +76,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-publications .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-journal','listing-journal_full','listing-year','listing-date','listing-volume','listing-issue','listing-pages','listing-doi','listing-pmid','listing-featured','listing-links',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-journal","listing-journal_full","listing-year","listing-date","listing-volume","listing-issue","listing-pages","listing-doi","listing-pmid","listing-featured","listing-links"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-publications'] = new List('listing-publications', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -95,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link active" href="./publications.html" aria-current="page"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
@@ -103,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./teaching.html" aria-current="page"> 
+    <a class="nav-link" href="./teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
@@ -146,26 +206,38 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#my-teaching" id="toc-my-teaching" class="nav-link active" data-scroll-target="#my-teaching">My teaching</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Publications</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="my-teaching" class="level1">
-<h1>My teaching</h1>
+    
+  
+    
+  </div>
+  
 
 
-</section>
+</header>
+
+
+<div id="listing-publications" class="quarto-listing quarto-listing-container-custom">
+<div class="pub-listing"><h2 class="pub-section-heading anchored">Featured</h2><div class="pub-group"><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1038/s41574-024-01058-9">Sex differences in skeletal muscle metabolism in exercise and type 2 diabetes mellitus</a></div><div class="pub-authors">MacGregor K, Ellefsen S, Pillon NJ, Hammarström D, Krook A</div><div class="pub-journal"><em>Nat Rev Endocrinol</em> 21(3): 166-179, 2024</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/39604583/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1111/apha.13806">Ribosome accumulation during early phase resistance training in humans</a></div><div class="pub-authors">Hammarström D, Øfsteng SJ, Jacobsen NB, Flobergseter KB, Rønnestad BR, Ellefsen S</div><div class="pub-journal"><em>Acta Physiol (Oxf)</em> 235(1): e13806, 2022</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/35213791/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a><a class="pub-link" href="https://github.com/dhammarstrom/ribo-accum-paper"><i class="bi bi-github" aria-hidden="true"></i> Data and code</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1113/JP278455">Benefits of higher resistance-training volume are related to ribosome biogenesis</a></div><div class="pub-authors">Hammarström D, Øfsteng S, Koll L, Hanestadhaugen M, Hollan I, Apró W, Whist JE, Blomstrand E, Rønnestad BR, Ellefsen S</div><div class="pub-journal"><em>J Physiol</em> 598(3): 543-565, 2020</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/31813190/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div></div><h2 class="pub-section-heading anchored">All publications</h2><div class="pub-group"><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1152/japplphysiol.00154.2026">Limited reproducibility of individual physiological adaptations to repeated endurance exercise training</a></div><div class="pub-authors">Odden IU, Hamarsland H, Odden TU, Hammarström D, Rustaden AM, Koll L, Hanestadhaugen M, Larsen S, Ellefsen S, Hansen J, Nygaard H, Lundby C, Mølmen KS</div><div class="pub-journal"><em>J Appl Physiol (1985)</em> 141(1): 38-57, 2026</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/42241643/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1152/japplphysiol.01038.2025">Similar performance and muscle adaptations between intervals with and without blood flow restriction in well-trained cyclists</a></div><div class="pub-authors">Zambolin F, Vikmoen O, Cumming KT, Skattebo Ø, Ødemark HN, Øfsteng SF, Hammarström D, Hansen J, Rønnestad BR, Raastad T</div><div class="pub-journal"><em>J Appl Physiol (1985)</em> 140(3): 699-709, 2026</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/41696846/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1002/ejsc.70067">Block Training With Moderate- or High-Intensity Intervals Both Improve Endurance Performance in Well-Trained Cyclists</a></div><div class="pub-authors">Rønnestad BR, Odden IU, Solum KS, Rustaden AM, Hamarsland H, Hammarström D, Nygaard H, Mølmen KS</div><div class="pub-journal"><em>Eur J Sport Sci</em> 25(11): e70067, 2025</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/41169000/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1249/MSS.0000000000003706">A Moderate-Intensity Interval Training Block Improves Endurance Performance in Well-Trained Cyclists</a></div><div class="pub-authors">Mølmen KS, Odden I, Sørensen MD, Rustaden AM, HAMMARSTRÖm D, Hansen J, Nygaard H, Hamarsland H, Rønnestad BR</div><div class="pub-journal"><em>Med Sci Sports Exerc</em> 57(8): 1780-1789, 2025</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/40101160/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1002/ejsc.12214">The higher oxygen consumption during multiple short intervals is sex-independent and not influenced by skeletal muscle characteristics in well-trained cyclists</a></div><div class="pub-authors">Urianstad T, Hamarsland H, Odden I, Lorentzen HC, Hammarström D, Mølmen KS, Rønnestad BR</div><div class="pub-journal"><em>Eur J Sport Sci</em> 24(11): 1614-1626, 2024</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/39435498/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1002/ejsc.12202">The higher the fraction of maximal oxygen uptake is during interval training, the greater is the cycling performance gain</a></div><div class="pub-authors">Odden I, Nymoen L, Urianstad T, Kristoffersen M, Hammarström D, Hansen J, Mølmen KS, Rønnestad BR</div><div class="pub-journal"><em>Eur J Sport Sci</em> 24(11): 1583-1596, 2024</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/39385317/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1519/JSC.0000000000004830">Superiority of High-Load vs. Low-Load Resistance Training in Military Cadets</a></div><div class="pub-authors">Øfsteng SF, Hammarström D, Knox S, Jøsok Ø, Helkala K, Koll L, Hanestadhaugen M, Raastad T, Rønnestad BR, Ellefsen S</div><div class="pub-journal"><em>J Strength Cond Res</em> 38(9): 1584-1595, 2024</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/39179241/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1007/s00421-024-05446-x">Glucose ingestion before and after resistance training sessions does not augment ribosome biogenesis in healthy moderately trained young adults</a></div><div class="pub-authors">Lian K, Hammarström D, Hamarsland H, Mølmen KS, Moen SC, Ellefsen S</div><div class="pub-journal"><em>Eur J Appl Physiol</em> 124(8): 2329-2342, 2024</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/38459192/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1186/s12859-022-04791-y">Normalization of gene expression data revisited: the three viewpoints of the transcriptome in human skeletal muscle undergoing load-induced hypertrophy and why they matter</a></div><div class="pub-authors">Khan Y, Hammarström D, Ellefsen S, Ahmad R</div><div class="pub-journal"><em>BMC Bioinformatics</em> 23(1): 241, 2022</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/35717158/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1249/MSS.0000000000002928">Heat Training Efficiently Increases and Maintains Hemoglobin Mass and Temperate Endurance Performance in Elite Cyclists</a></div><div class="pub-authors">Rønnestad BR, Urianstad T, Hamarsland H, Hansen J, Nygaard H, Ellefsen S, Hammarström D, Lundby C</div><div class="pub-journal"><em>Med Sci Sports Exerc</em> 54(9): 1515-1526, 2022</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/35394464/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1111/sms.14156">Heat suit training increases hemoglobin mass in elite cross-country skiers</a></div><div class="pub-authors">Rønnestad BR, Lid OM, Hansen J, Hamarsland H, Mølmen KS, Nygaard H, Ellefsen S, Hammarström D, Lundby C</div><div class="pub-journal"><em>Scand J Med Sci Sports</em> 32(7): 1089-1098, 2022</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/35305278/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1123/ijspp.2021-0226">Increasing Oxygen Uptake in Cross-Country Skiers by Speed Variation in Work Intervals</a></div><div class="pub-authors">Rønnestad BR, Bakken TA, Thyli V, Hansen J, Ellefsen S, Hammarstrøm D</div><div class="pub-journal"><em>Int J Sports Physiol Perform</em> 17(3): 384-390, 2021</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/34814113/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1186/s12967-021-02969-1">Chronic obstructive pulmonary disease does not impair responses to resistance training</a></div><div class="pub-authors">Mølmen KS, Hammarström D, Falch GS, Grundtvig M, Koll L, Hanestadhaugen M, Khan Y, Ahmad R, Malerbakken B, Rødølen TJ, Lien R, Rønnestad BR, Raastad T, Ellefsen S</div><div class="pub-journal"><em>J Transl Med</em> 19(1): 292, 2021</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/34229714/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1002/jcsm.12688">Vitamin D3 supplementation does not enhance the effects of resistance training in older adults</a></div><div class="pub-authors">Mølmen KS, Hammarström D, Pedersen K, Lian Lie AC, Steile RB, Nygaard H, Khan Y, Hamarsland H, Koll L, Hanestadhaugen M, Eriksen AL, Grindaker E, Whist JE, Buck D, Ahmad R, Strand TA, Rønnestad BR, Ellefsen S</div><div class="pub-journal"><em>J Cachexia Sarcopenia Muscle</em> 12(3): 599-628, 2021</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/33788419/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1123/ijspp.2020-0647">Superior Physiological Adaptations After a Microcycle of Short Intervals Versus Long Intervals in Cyclists</a></div><div class="pub-authors">Rønnestad BR, Øfsteng SJ, Zambolin F, Raastad T, Hammarström D</div><div class="pub-journal"><em>Int J Sports Physiol Perform</em> 16(10): 1432-1438, 2021</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/33735833/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1123/ijspp.2019-0987">Performance-Determining Variables in Long-Distance Events: Should They Be Determined From a Rested State or After Prolonged Submaximal Exercise?</a></div><div class="pub-authors">Noordhof DA, Øfsteng SJ, Nirenberg L, Hammarström D, Hansen J, Rønnestad BR, Sandbakk Ø</div><div class="pub-journal"><em>Int J Sports Physiol Perform</em> 16(5): 647-654, 2020</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/33291068/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1186/s12859-020-03866-y">Increased biological relevance of transcriptome analyses in human skeletal muscle using a model-specific pipeline</a></div><div class="pub-authors">Khan Y, Hammarström D, Rønnestad BR, Ellefsen S, Ahmad R</div><div class="pub-journal"><em>BMC Bioinformatics</em> 21(1): 548, 2020</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/33256614/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1111/sms.13672">Systemic and muscular responses to effort-matched short intervals and long intervals in elite cyclists</a></div><div class="pub-authors">Almquist NW, Nygaard H, Vegge G, Hammarström D, Ellefsen S, Rønnestad BR</div><div class="pub-journal"><em>Scand J Med Sci Sports</em> 30(7): 1140-1150, 2020</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/32267032/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.3389/fphys.2018.00713">Effects of Initial Performance, Gross Efficiency and O 2peak Characteristics on Subsequent Adaptations to Endurance Training in Competitive Cyclists</a></div><div class="pub-authors">Skovereng K, Sylta Ø, Tønnessen E, Hammarström D, Danielsen J, Seiler S, Rønnestad BR, Sandbakk Ø</div><div class="pub-journal"><em>Front Physiol</em> 9: 713, 2018</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/29962959/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1111/sms.13075">Hypobaric live high-train low does not improve aerobic performance more than live low-train low in cross-country skiers</a></div><div class="pub-authors">Robach P, Hansen J, Pichon A, Meinild Lundby AK, Dandanell S, Slettaløkken Falch G, Hammarström D, Pesta DH, Siebenmann C, Keiser S, Kérivel P, Whist JE, Rønnestad BR, Lundby C</div><div class="pub-journal"><em>Scand J Med Sci Sports</em> 28(6): 1636-1652, 2018</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/29469995/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1111/sms.12990">Strength training improves double-poling performance after prolonged submaximal exercise in cross-country skiers</a></div><div class="pub-authors">Øfsteng S, Sandbakk Ø, van Beekvelt M, Hammarström D, Kristoffersen R, Hansen J, Paulsen G, Rønnestad BR</div><div class="pub-journal"><em>Scand J Med Sci Sports</em> 28(3): 893-904, 2017</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/29024041/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://pubmed.ncbi.nlm.nih.gov/28630579/">Effects of Exercise in the Fasted and Postprandial State on Interstitial Glucose in Hyperglycemic Individuals</a></div><div class="pub-authors">Nygaard H, Rønnestad BR, Hammarström D, Holmboe-Ottesen G, Høstmark AT</div><div class="pub-journal"><em>J Sports Sci Med</em> 16(2): 254-263, 2017</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/28630579/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1249/MSS.0000000000001214">Effects of High-Intensity Training on Physiological and Hormonal Adaptions in Well-Trained Cyclists</a></div><div class="pub-authors">Sylta Ø, Tønnessen E, Sandbakk Ø, Hammarström D, Danielsen J, Skovereng K, Rønnestad BR, Seiler S</div><div class="pub-journal"><em>Med Sci Sports Exerc</em> 49(6): 1137-1146, 2017</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/28121800/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1249/MSS.0000000000001007">The Effect of Different High-Intensity Periodization Models on Endurance Adaptations</a></div><div class="pub-authors">Sylta Ø, Tønnessen E, Hammarström D, Danielsen J, Skovereng K, Ravn T, Rønnestad BR, Sandbakk Ø, Seiler S</div><div class="pub-journal"><em>Med Sci Sports Exerc</em> 48(11): 2165-2174, 2016</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/27300278/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.2147/OAJSM.S93174">Optimal [Formula: see text] ratio for predicting 15 km performance among elite male cross-country skiers</a></div><div class="pub-authors">Carlsson T, Carlsson M, Hammarström D, Rønnestad BR, Malm CB, Tonkonogi M</div><div class="pub-journal"><em>Open Access J Sports Med</em> 6: 353-360, 2015</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/26719730/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1152/ajpregu.00497.2014">Blood flow-restricted strength training displays high functional and biological efficacy in women: a within-subject comparison with high-load strength training</a></div><div class="pub-authors">Ellefsen S, Hammarström D, Strand TA, Zacharoff E, Whist JE, Rauk I, Nygaard H, Vegge G, Hanestadhaugen M, Wernbom M, Cumming KT, Rønning R, Raastad T, Rønnestad BR</div><div class="pub-journal"><em>Am J Physiol Regul Integr Comp Physiol</em> 309(7): R767-79, 2015</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/26202071/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1123/ijspp.2013-0509">Prediction of race performance of elite cross-country skiers by lean mass</a></div><div class="pub-authors">Carlsson M, Carlsson T, HammarstrÖm D, Malm C, Tonkonogi M</div><div class="pub-journal"><em>Int J Sports Physiol Perform</em> 9(6): 1040-5, 2014</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/24700141/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1111/sms.12185">Reliable determination of training-induced alterations in muscle fiber composition in human skeletal muscle using quantitative polymerase chain reaction</a></div><div class="pub-authors">Ellefsen S, Vikmoen O, Zacharoff E, Rauk I, Slettaløkken G, Hammarström D, Strand TA, Whist JE, Hanestadhaugen M, Vegge G, Fagernes CE, Nygaard H, Hollan I, Rønnestad BR</div><div class="pub-journal"><em>Scand J Med Sci Sports</em> 24(5): e332-42, 2014</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/24924099/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1080/02640414.2013.803586">Scaling maximal oxygen uptake to predict performance in elite-standard men cross-country skiers</a></div><div class="pub-authors">Carlsson T, Carlsson M, Felleki M, Hammarström D, Heil D, Malm C, Tonkonogi M</div><div class="pub-journal"><em>J Sports Sci</em> 31(16): 1753-60, 2013</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/23829681/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1080/02640414.2012.744079">Scaling of upper-body power output to predict time-trial roller skiing performance</a></div><div class="pub-authors">Carlsson T, Carlsson M, Hammarström D, Malm C, Tonkonogi M</div><div class="pub-journal"><em>J Sports Sci</em> 31(6): 582-8, 2012</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/23170935/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1123/ijspp.2012-0172">Time trials predict the competitive performance capacity of junior cross-country skiers</a></div><div class="pub-authors">Carlsson M, Carlsson T, Hammarström D, Malm C, Tonkonogi M</div><div class="pub-journal"><em>Int J Sports Physiol Perform</em> 9(1): 12-8, 2012</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/23038700/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div><div class="pub-item"><div class="pub-title"><a href="https://doi.org/10.1519/JSC.0b013e318231a799">Validation of physiological tests in relation to competitive performances in elite male distance cross-country skiing</a></div><div class="pub-authors">Carlsson M, Carlsson T, Hammarström D, Tiivel T, Malm C, Tonkonogi M</div><div class="pub-journal"><em>J Strength Cond Res</em> 26(6): 1496-504, 2012</div><div class="pub-links"><a class="pub-link" href="https://pubmed.ncbi.nlm.nih.gov/22614140/"><i class="bi bi-file-earmark-text" aria-hidden="true"></i> PubMed</a></div></div></div></div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
+
+
 
 </main> <!-- /main -->
 <script>
