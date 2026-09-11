@@ -1,0 +1,52 @@
+meta:
+  name: Daniel Hammarström
+  link:
+    home: https://dhammarstrom.github.io
+
+color:
+  palette:
+    darkgreen: "#21260F"
+    lightgreen: "#46503D"
+    gray: "#D2D4D1"
+    darkred: "#400101"
+    lightred: "#BF4545"
+    blue: "#3498db"
+    green: "#2ecc71"
+    yellow: "#f1c40f"
+    light: "#ecf0f1"
+    dark: "#34495e"
+  primary: lightgreen
+  secondary: darkred
+  info: lightred
+  success: yellow
+  warning: lightred
+  foreground: dark
+  background: light
+
+typography:
+  fonts:
+    - family: Roboto
+      source: google
+      weight: [400, 700]
+      style: [normal, italic]
+    - family: Capriola 
+      source: google
+      weight: 400
+      style: normal
+    - family: Source Code Pro
+      source: google
+      weight: [400, 600]
+      style: normal
+  base:
+    family: Roboto
+    weight: 400
+    line-height: 1.6
+  headings:
+    family: Capriola 
+    weight: 400
+    color: primary
+  monospace:
+    family: Source Code Pro
+  link:
+    color: primary
+    decoration: none

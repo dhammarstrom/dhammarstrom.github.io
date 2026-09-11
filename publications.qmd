@@ -1,0 +1,15 @@
+---
+title: "Publications"
+listing:
+  - id: publications
+    contents: publications.yml
+    template: _templates/publications.ejs
+    sort: "date desc"
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    page-size: 500
+---
+
+::: {#publications}
+:::

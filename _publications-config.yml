@@ -1,0 +1,25 @@
+# Configuration for scripts/update-publications.R
+#
+# Edit this file to control what the script pulls from PubMed. It never
+# touches publications.yml directly -- the script merges results into that
+# file and leaves your manual edits alone.
+
+# PubMed search term (same syntax as the PubMed search box).
+query: 'Hammarström D[Author]'
+
+# Maximum number of records to retrieve for the query above.
+retmax: 300
+
+# Your e-mail: NCBI asks that automated requests identify themselves.
+email: 'daniel.hammarstrom@inn.no'
+
+# Optional NCBI API key (raises the rate limit). Leave empty to go without,
+# or set the NCBI_API_KEY environment variable instead of putting it here.
+api_key: ''
+
+# PMIDs the query misses -- they are fetched and merged in as well.
+extra_pmids: []
+
+# PMIDs the query wrongly returns (other people named Hammarstrom D).
+# Listing a PMID here removes it from publications.yml and keeps it out.
+exclude_pmids: []

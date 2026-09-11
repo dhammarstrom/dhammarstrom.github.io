@@ -1,0 +1,44 @@
+/*-- scss:rules --*/
+
+// Layout and type scale for the publication listing. Colours and font
+// families come from _brand.yml -- nothing here sets them.
+
+.pub-section-heading {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid $primary;
+}
+
+.pub-item {
+  margin-bottom: 1.4rem;
+}
+
+.pub-title {
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.pub-authors,
+.pub-journal,
+.pub-description {
+  font-size: 0.85rem;
+  line-height: 1.45;
+  opacity: 0.85;
+}
+
+.pub-description {
+  margin-top: 0.2rem;
+  font-style: italic;
+}
+
+.pub-links {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+}
+
+.pub-links .pub-link {
+  margin-right: 0.9rem;
+  white-space: nowrap;
+}

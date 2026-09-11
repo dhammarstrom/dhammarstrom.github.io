@@ -1,0 +1,43 @@
+---
+title: "Starting my course with two sad stories"
+author: "Daniel Hammarström"
+date: "2026-09-11"
+categories: [teaching, notes]
+bibliography: bibliography.bib
+---
+
+Yesterday, I started this year's version of my course, [*Scientific Communication, Collaboration and Design in Quantitative Research Using R*](https://studiekatalog.edutorium.no/inn/nb/course/HEV9009/2026-autumn). In the course, we use R and related software to visualize data, collaborate in complex data analysis projects, manage (medium-sized) data sets, and express scientific ideas as visualizations and mathematical formulas. A lot of the course is dedicated to ways we can improve our reproducible science skills.
+
+To get started, I presented two sad stories about scientific projects being held up by shortcuts that make it harder to reproduce results. Such shortcuts could be working with raw data in Excel sheets, not scripting analyses, or not maintaining an environment with fixed package versions. The sad part of the stories is that, to finalize the projects, a lot of effort was required to offset the costs of bad habits at the start.
+
+Roger Peng [@peng2011] has a nice illustration of the replication/reproducibility continuum; it suggests that as more components that enable reproducibility are added to a project, it gets closer to the minimum standard of being fully reproducible. However, my experience is that we could understand the relationship between effort and reproducibility as an S-shaped curve (@fig-sshape). Much effort is required in the beginning to go from zero to, let's say, 20% on the "reproducibility scale". Then we reach a zone where we gain a lot, with little extra effort. However, really pushing a project all the way to 100% again requires considerable effort.
+
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+#| label: fig-sshape
+
+library(tidyverse)
+
+data.frame(x = seq(from = -6, to = 6, by =0.1)) |> 
+  mutate(y = plogis(x)) |> 
+  ggplot(aes(x, y)) + geom_line() + 
+  labs(x = "Effort", 
+       y = "Reproducibility") + 
+  scale_x_continuous(breaks = NULL) + 
+  scale_y_continuous(breaks = c(0, 1), 
+                     labels = c("0%", "100%")) + 
+  theme_classic(base_size = 12) +
+  theme(axis.title.y = element_text(angle = 0))
+
+
+
+
+
+
+```
+
+I hope the takeaway from the course introduction was that we should aim to do a little better at every opportunity. The aim of the course is to make it easier to do a little better.
+

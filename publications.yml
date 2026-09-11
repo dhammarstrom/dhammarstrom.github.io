@@ -1,0 +1,794 @@
+# Publications listed on publications.qmd -- partly generated, safe to edit.
+#
+# Regenerate with:  Rscript scripts/update-publications.R
+#
+# The script refreshes the PubMed fields and preserves everything else, so
+# these are yours and they survive every run:
+#
+#   featured: true          moves the entry into the Featured section
+#   links:                  extra links shown under the entry
+#     - text: Blog post
+#       href: posts/good-science/index.html
+#       icon: journal-text  # any Bootstrap icon name
+#     - text: Data and code
+#       href: https://github.com/dhammarstrom/some-repo
+#       icon: github
+#
+# To drop a wrong hit, add its PMID to exclude_pmids in
+# _publications-config.yml -- deleting it here only brings it back.
+
+- title: Limited reproducibility of individual physiological adaptations to repeated
+    endurance exercise training
+  author:
+  - Odden IU
+  - Hamarsland H
+  - Odden TU
+  - Hammarström D
+  - Rustaden AM
+  - Koll L
+  - Hanestadhaugen M
+  - Larsen S
+  - Ellefsen S
+  - Hansen J
+  - Nygaard H
+  - Lundby C
+  - Mølmen KS
+  journal: J Appl Physiol (1985)
+  journal_full: 'Journal of applied physiology (Bethesda, Md. : 1985)'
+  year: 2026
+  date: '2026-06-04'
+  volume: '141'
+  issue: '1'
+  pages: 38-57
+  doi: 10.1152/japplphysiol.00154.2026
+  pmid: '42241643'
+  featured: false
+  links: []
+- title: Similar performance and muscle adaptations between intervals with and without
+    blood flow restriction in well-trained cyclists
+  author:
+  - Zambolin F
+  - Vikmoen O
+  - Cumming KT
+  - Skattebo Ø
+  - Ødemark HN
+  - Øfsteng SF
+  - Hammarström D
+  - Hansen J
+  - Rønnestad BR
+  - Raastad T
+  journal: J Appl Physiol (1985)
+  journal_full: 'Journal of applied physiology (Bethesda, Md. : 1985)'
+  year: 2026
+  date: '2026-02-16'
+  volume: '140'
+  issue: '3'
+  pages: 699-709
+  doi: 10.1152/japplphysiol.01038.2025
+  pmid: '41696846'
+  featured: false
+  links: []
+- title: Block Training With Moderate- or High-Intensity Intervals Both Improve Endurance
+    Performance in Well-Trained Cyclists
+  author:
+  - Rønnestad BR
+  - Odden IU
+  - Solum KS
+  - Rustaden AM
+  - Hamarsland H
+  - Hammarström D
+  - Nygaard H
+  - Mølmen KS
+  journal: Eur J Sport Sci
+  journal_full: European journal of sport science
+  year: 2025
+  date: '2025-11-01'
+  volume: '25'
+  issue: '11'
+  pages: e70067
+  doi: 10.1002/ejsc.70067
+  pmid: '41169000'
+  featured: false
+  links: []
+- title: A Moderate-Intensity Interval Training Block Improves Endurance Performance
+    in Well-Trained Cyclists
+  author:
+  - Mølmen KS
+  - Odden I
+  - Sørensen MD
+  - Rustaden AM
+  - HAMMARSTRÖm D
+  - Hansen J
+  - Nygaard H
+  - Hamarsland H
+  - Rønnestad BR
+  journal: Med Sci Sports Exerc
+  journal_full: Medicine and science in sports and exercise
+  year: 2025
+  date: '2025-03-18'
+  volume: '57'
+  issue: '8'
+  pages: 1780-1789
+  doi: 10.1249/MSS.0000000000003706
+  pmid: '40101160'
+  featured: false
+  links: []
+- title: Sex differences in skeletal muscle metabolism in exercise and type 2 diabetes
+    mellitus
+  author:
+  - MacGregor K
+  - Ellefsen S
+  - Pillon NJ
+  - Hammarström D
+  - Krook A
+  journal: Nat Rev Endocrinol
+  journal_full: Nature reviews. Endocrinology
+  year: 2024
+  date: '2024-11-27'
+  volume: '21'
+  issue: '3'
+  pages: 166-179
+  doi: 10.1038/s41574-024-01058-9
+  pmid: '39604583'
+  featured: true
+  links: []
+- title: The higher oxygen consumption during multiple short intervals is sex-independent
+    and not influenced by skeletal muscle characteristics in well-trained cyclists
+  author:
+  - Urianstad T
+  - Hamarsland H
+  - Odden I
+  - Lorentzen HC
+  - Hammarström D
+  - Mølmen KS
+  - Rønnestad BR
+  journal: Eur J Sport Sci
+  journal_full: European journal of sport science
+  year: 2024
+  date: '2024-10-22'
+  volume: '24'
+  issue: '11'
+  pages: 1614-1626
+  doi: 10.1002/ejsc.12214
+  pmid: '39435498'
+  featured: false
+  links: []
+- title: The higher the fraction of maximal oxygen uptake is during interval training,
+    the greater is the cycling performance gain
+  author:
+  - Odden I
+  - Nymoen L
+  - Urianstad T
+  - Kristoffersen M
+  - Hammarström D
+  - Hansen J
+  - Mølmen KS
+  - Rønnestad BR
+  journal: Eur J Sport Sci
+  journal_full: European journal of sport science
+  year: 2024
+  date: '2024-10-09'
+  volume: '24'
+  issue: '11'
+  pages: 1583-1596
+  doi: 10.1002/ejsc.12202
+  pmid: '39385317'
+  featured: false
+  links: []
+- title: Superiority of High-Load vs. Low-Load Resistance Training in Military Cadets
+  author:
+  - Øfsteng SF
+  - Hammarström D
+  - Knox S
+  - Jøsok Ø
+  - Helkala K
+  - Koll L
+  - Hanestadhaugen M
+  - Raastad T
+  - Rønnestad BR
+  - Ellefsen S
+  journal: J Strength Cond Res
+  journal_full: Journal of strength and conditioning research
+  year: 2024
+  date: '2024-08-14'
+  volume: '38'
+  issue: '9'
+  pages: 1584-1595
+  doi: 10.1519/JSC.0000000000004830
+  pmid: '39179241'
+  featured: false
+  links: []
+- title: Glucose ingestion before and after resistance training sessions does not
+    augment ribosome biogenesis in healthy moderately trained young adults
+  author:
+  - Lian K
+  - Hammarström D
+  - Hamarsland H
+  - Mølmen KS
+  - Moen SC
+  - Ellefsen S
+  journal: Eur J Appl Physiol
+  journal_full: European journal of applied physiology
+  year: 2024
+  date: '2024-03-08'
+  volume: '124'
+  issue: '8'
+  pages: 2329-2342
+  doi: 10.1007/s00421-024-05446-x
+  pmid: '38459192'
+  featured: false
+  links: []
+- title: 'Normalization of gene expression data revisited: the three viewpoints of
+    the transcriptome in human skeletal muscle undergoing load-induced hypertrophy
+    and why they matter'
+  author:
+  - Khan Y
+  - Hammarström D
+  - Ellefsen S
+  - Ahmad R
+  journal: BMC Bioinformatics
+  journal_full: BMC bioinformatics
+  year: 2022
+  date: '2022-06-18'
+  volume: '23'
+  issue: '1'
+  pages: '241'
+  doi: 10.1186/s12859-022-04791-y
+  pmid: '35717158'
+  featured: false
+  links: []
+- title: Heat Training Efficiently Increases and Maintains Hemoglobin Mass and Temperate
+    Endurance Performance in Elite Cyclists
+  author:
+  - Rønnestad BR
+  - Urianstad T
+  - Hamarsland H
+  - Hansen J
+  - Nygaard H
+  - Ellefsen S
+  - Hammarström D
+  - Lundby C
+  journal: Med Sci Sports Exerc
+  journal_full: Medicine and science in sports and exercise
+  year: 2022
+  date: '2022-04-08'
+  volume: '54'
+  issue: '9'
+  pages: 1515-1526
+  doi: 10.1249/MSS.0000000000002928
+  pmid: '35394464'
+  featured: false
+  links: []
+- title: Heat suit training increases hemoglobin mass in elite cross-country skiers
+  author:
+  - Rønnestad BR
+  - Lid OM
+  - Hansen J
+  - Hamarsland H
+  - Mølmen KS
+  - Nygaard H
+  - Ellefsen S
+  - Hammarström D
+  - Lundby C
+  journal: Scand J Med Sci Sports
+  journal_full: Scandinavian journal of medicine & science in sports
+  year: 2022
+  date: '2022-03-26'
+  volume: '32'
+  issue: '7'
+  pages: 1089-1098
+  doi: 10.1111/sms.14156
+  pmid: '35305278'
+  featured: false
+  links: []
+- title: Ribosome accumulation during early phase resistance training in humans
+  author:
+  - Hammarström D
+  - Øfsteng SJ
+  - Jacobsen NB
+  - Flobergseter KB
+  - Rønnestad BR
+  - Ellefsen S
+  journal: Acta Physiol (Oxf)
+  journal_full: Acta physiologica (Oxford, England)
+  year: 2022
+  date: '2022-03-07'
+  volume: '235'
+  issue: '1'
+  pages: e13806
+  doi: 10.1111/apha.13806
+  pmid: '35213791'
+  featured: true
+  links:
+    - text: Data and code
+      href: https://github.com/dhammarstrom/ribo-accum-paper
+      icon: github
+- title: Increasing Oxygen Uptake in Cross-Country Skiers by Speed Variation in Work
+    Intervals
+  author:
+  - Rønnestad BR
+  - Bakken TA
+  - Thyli V
+  - Hansen J
+  - Ellefsen S
+  - Hammarstrøm D
+  journal: Int J Sports Physiol Perform
+  journal_full: International journal of sports physiology and performance
+  year: 2021
+  date: '2021-11-22'
+  volume: '17'
+  issue: '3'
+  pages: 384-390
+  doi: 10.1123/ijspp.2021-0226
+  pmid: '34814113'
+  featured: false
+  links: []
+- title: Chronic obstructive pulmonary disease does not impair responses to resistance
+    training
+  author:
+  - Mølmen KS
+  - Hammarström D
+  - Falch GS
+  - Grundtvig M
+  - Koll L
+  - Hanestadhaugen M
+  - Khan Y
+  - Ahmad R
+  - Malerbakken B
+  - Rødølen TJ
+  - Lien R
+  - Rønnestad BR
+  - Raastad T
+  - Ellefsen S
+  journal: J Transl Med
+  journal_full: Journal of translational medicine
+  year: 2021
+  date: '2021-07-06'
+  volume: '19'
+  issue: '1'
+  pages: '292'
+  doi: 10.1186/s12967-021-02969-1
+  pmid: '34229714'
+  featured: false
+  links: []
+- title: Vitamin D3 supplementation does not enhance the effects of resistance training
+    in older adults
+  author:
+  - Mølmen KS
+  - Hammarström D
+  - Pedersen K
+  - Lian Lie AC
+  - Steile RB
+  - Nygaard H
+  - Khan Y
+  - Hamarsland H
+  - Koll L
+  - Hanestadhaugen M
+  - Eriksen AL
+  - Grindaker E
+  - Whist JE
+  - Buck D
+  - Ahmad R
+  - Strand TA
+  - Rønnestad BR
+  - Ellefsen S
+  journal: J Cachexia Sarcopenia Muscle
+  journal_full: Journal of cachexia, sarcopenia and muscle
+  year: 2021
+  date: '2021-03-31'
+  volume: '12'
+  issue: '3'
+  pages: 599-628
+  doi: 10.1002/jcsm.12688
+  pmid: '33788419'
+  featured: false
+  links: []
+- title: Superior Physiological Adaptations After a Microcycle of Short Intervals
+    Versus Long Intervals in Cyclists
+  author:
+  - Rønnestad BR
+  - Øfsteng SJ
+  - Zambolin F
+  - Raastad T
+  - Hammarström D
+  journal: Int J Sports Physiol Perform
+  journal_full: International journal of sports physiology and performance
+  year: 2021
+  date: '2021-03-18'
+  volume: '16'
+  issue: '10'
+  pages: 1432-1438
+  doi: 10.1123/ijspp.2020-0647
+  pmid: '33735833'
+  featured: false
+  links: []
+- title: 'Performance-Determining Variables in Long-Distance Events: Should They Be
+    Determined From a Rested State or After Prolonged Submaximal Exercise?'
+  author:
+  - Noordhof DA
+  - Øfsteng SJ
+  - Nirenberg L
+  - Hammarström D
+  - Hansen J
+  - Rønnestad BR
+  - Sandbakk Ø
+  journal: Int J Sports Physiol Perform
+  journal_full: International journal of sports physiology and performance
+  year: 2020
+  date: '2020-12-08'
+  volume: '16'
+  issue: '5'
+  pages: 647-654
+  doi: 10.1123/ijspp.2019-0987
+  pmid: '33291068'
+  featured: false
+  links: []
+- title: Increased biological relevance of transcriptome analyses in human skeletal
+    muscle using a model-specific pipeline
+  author:
+  - Khan Y
+  - Hammarström D
+  - Rønnestad BR
+  - Ellefsen S
+  - Ahmad R
+  journal: BMC Bioinformatics
+  journal_full: BMC bioinformatics
+  year: 2020
+  date: '2020-11-30'
+  volume: '21'
+  issue: '1'
+  pages: '548'
+  doi: 10.1186/s12859-020-03866-y
+  pmid: '33256614'
+  featured: false
+  links: []
+- title: Systemic and muscular responses to effort-matched short intervals and long
+    intervals in elite cyclists
+  author:
+  - Almquist NW
+  - Nygaard H
+  - Vegge G
+  - Hammarström D
+  - Ellefsen S
+  - Rønnestad BR
+  journal: Scand J Med Sci Sports
+  journal_full: Scandinavian journal of medicine & science in sports
+  year: 2020
+  date: '2020-04-30'
+  volume: '30'
+  issue: '7'
+  pages: 1140-1150
+  doi: 10.1111/sms.13672
+  pmid: '32267032'
+  featured: false
+  links: []
+- title: Benefits of higher resistance-training volume are related to ribosome biogenesis
+  author:
+  - Hammarström D
+  - Øfsteng S
+  - Koll L
+  - Hanestadhaugen M
+  - Hollan I
+  - Apró W
+  - Whist JE
+  - Blomstrand E
+  - Rønnestad BR
+  - Ellefsen S
+  journal: J Physiol
+  journal_full: The Journal of physiology
+  year: 2020
+  date: '2020-01-15'
+  volume: '598'
+  issue: '3'
+  pages: 543-565
+  doi: 10.1113/JP278455
+  pmid: '31813190'
+  featured: true
+  links: []
+- title: Effects of Initial Performance, Gross Efficiency and O 2peak Characteristics
+    on Subsequent Adaptations to Endurance Training in Competitive Cyclists
+  author:
+  - Skovereng K
+  - Sylta Ø
+  - Tønnessen E
+  - Hammarström D
+  - Danielsen J
+  - Seiler S
+  - Rønnestad BR
+  - Sandbakk Ø
+  journal: Front Physiol
+  journal_full: Frontiers in physiology
+  year: 2018
+  date: '2018-06-14'
+  volume: '9'
+  pages: '713'
+  doi: 10.3389/fphys.2018.00713
+  pmid: '29962959'
+  featured: false
+  links: []
+- title: Hypobaric live high-train low does not improve aerobic performance more than
+    live low-train low in cross-country skiers
+  author:
+  - Robach P
+  - Hansen J
+  - Pichon A
+  - Meinild Lundby AK
+  - Dandanell S
+  - Slettaløkken Falch G
+  - Hammarström D
+  - Pesta DH
+  - Siebenmann C
+  - Keiser S
+  - Kérivel P
+  - Whist JE
+  - Rønnestad BR
+  - Lundby C
+  journal: Scand J Med Sci Sports
+  journal_full: Scandinavian journal of medicine & science in sports
+  year: 2018
+  date: '2018-03-22'
+  volume: '28'
+  issue: '6'
+  pages: 1636-1652
+  doi: 10.1111/sms.13075
+  pmid: '29469995'
+  featured: false
+  links: []
+- title: Strength training improves double-poling performance after prolonged submaximal
+    exercise in cross-country skiers
+  author:
+  - Øfsteng S
+  - Sandbakk Ø
+  - van Beekvelt M
+  - Hammarström D
+  - Kristoffersen R
+  - Hansen J
+  - Paulsen G
+  - Rønnestad BR
+  journal: Scand J Med Sci Sports
+  journal_full: Scandinavian journal of medicine & science in sports
+  year: 2017
+  date: '2017-11-17'
+  volume: '28'
+  issue: '3'
+  pages: 893-904
+  doi: 10.1111/sms.12990
+  pmid: '29024041'
+  featured: false
+  links: []
+- title: Effects of Exercise in the Fasted and Postprandial State on Interstitial
+    Glucose in Hyperglycemic Individuals
+  author:
+  - Nygaard H
+  - Rønnestad BR
+  - Hammarström D
+  - Holmboe-Ottesen G
+  - Høstmark AT
+  journal: J Sports Sci Med
+  journal_full: Journal of sports science & medicine
+  year: 2017
+  date: '2017-06-01'
+  volume: '16'
+  issue: '2'
+  pages: 254-263
+  pmid: '28630579'
+  featured: false
+  links: []
+- title: Effects of High-Intensity Training on Physiological and Hormonal Adaptions
+    in Well-Trained Cyclists
+  author:
+  - Sylta Ø
+  - Tønnessen E
+  - Sandbakk Ø
+  - Hammarström D
+  - Danielsen J
+  - Skovereng K
+  - Rønnestad BR
+  - Seiler S
+  journal: Med Sci Sports Exerc
+  journal_full: Medicine and science in sports and exercise
+  year: 2017
+  date: '2017-06-01'
+  volume: '49'
+  issue: '6'
+  pages: 1137-1146
+  doi: 10.1249/MSS.0000000000001214
+  pmid: '28121800'
+  featured: false
+  links: []
+- title: The Effect of Different High-Intensity Periodization Models on Endurance
+    Adaptations
+  author:
+  - Sylta Ø
+  - Tønnessen E
+  - Hammarström D
+  - Danielsen J
+  - Skovereng K
+  - Ravn T
+  - Rønnestad BR
+  - Sandbakk Ø
+  - Seiler S
+  journal: Med Sci Sports Exerc
+  journal_full: Medicine and science in sports and exercise
+  year: 2016
+  date: '2016-11-01'
+  volume: '48'
+  issue: '11'
+  pages: 2165-2174
+  doi: 10.1249/MSS.0000000000001007
+  pmid: '27300278'
+  featured: false
+  links: []
+- title: 'Optimal [Formula: see text] ratio for predicting 15 km performance among
+    elite male cross-country skiers'
+  author:
+  - Carlsson T
+  - Carlsson M
+  - Hammarström D
+  - Rønnestad BR
+  - Malm CB
+  - Tonkonogi M
+  journal: Open Access J Sports Med
+  journal_full: Open access journal of sports medicine
+  year: 2015
+  date: '2015-12-16'
+  volume: '6'
+  pages: 353-360
+  doi: 10.2147/OAJSM.S93174
+  pmid: '26719730'
+  featured: false
+  links: []
+- title: 'Blood flow-restricted strength training displays high functional and biological
+    efficacy in women: a within-subject comparison with high-load strength training'
+  author:
+  - Ellefsen S
+  - Hammarström D
+  - Strand TA
+  - Zacharoff E
+  - Whist JE
+  - Rauk I
+  - Nygaard H
+  - Vegge G
+  - Hanestadhaugen M
+  - Wernbom M
+  - Cumming KT
+  - Rønning R
+  - Raastad T
+  - Rønnestad BR
+  journal: Am J Physiol Regul Integr Comp Physiol
+  journal_full: American journal of physiology. Regulatory, integrative and comparative
+    physiology
+  year: 2015
+  date: '2015-07-22'
+  volume: '309'
+  issue: '7'
+  pages: R767-79
+  doi: 10.1152/ajpregu.00497.2014
+  pmid: '26202071'
+  featured: false
+  links: []
+- title: Prediction of race performance of elite cross-country skiers by lean mass
+  author:
+  - Carlsson M
+  - Carlsson T
+  - HammarstrÖm D
+  - Malm C
+  - Tonkonogi M
+  journal: Int J Sports Physiol Perform
+  journal_full: International journal of sports physiology and performance
+  year: 2014
+  date: '2014-04-03'
+  volume: '9'
+  issue: '6'
+  pages: 1040-5
+  doi: 10.1123/ijspp.2013-0509
+  pmid: '24700141'
+  featured: false
+  links: []
+- title: Reliable determination of training-induced alterations in muscle fiber composition
+    in human skeletal muscle using quantitative polymerase chain reaction
+  author:
+  - Ellefsen S
+  - Vikmoen O
+  - Zacharoff E
+  - Rauk I
+  - Slettaløkken G
+  - Hammarström D
+  - Strand TA
+  - Whist JE
+  - Hanestadhaugen M
+  - Vegge G
+  - Fagernes CE
+  - Nygaard H
+  - Hollan I
+  - Rønnestad BR
+  journal: Scand J Med Sci Sports
+  journal_full: Scandinavian journal of medicine & science in sports
+  year: 2014
+  date: '2014-02-20'
+  volume: '24'
+  issue: '5'
+  pages: e332-42
+  doi: 10.1111/sms.12185
+  pmid: '24924099'
+  featured: false
+  links: []
+- title: Scaling maximal oxygen uptake to predict performance in elite-standard men
+    cross-country skiers
+  author:
+  - Carlsson T
+  - Carlsson M
+  - Felleki M
+  - Hammarström D
+  - Heil D
+  - Malm C
+  - Tonkonogi M
+  journal: J Sports Sci
+  journal_full: Journal of sports sciences
+  year: 2013
+  date: '2013-07-08'
+  volume: '31'
+  issue: '16'
+  pages: 1753-60
+  doi: 10.1080/02640414.2013.803586
+  pmid: '23829681'
+  featured: false
+  links: []
+- title: Scaling of upper-body power output to predict time-trial roller skiing performance
+  author:
+  - Carlsson T
+  - Carlsson M
+  - Hammarström D
+  - Malm C
+  - Tonkonogi M
+  journal: J Sports Sci
+  journal_full: Journal of sports sciences
+  year: 2012
+  date: '2012-11-22'
+  volume: '31'
+  issue: '6'
+  pages: 582-8
+  doi: 10.1080/02640414.2012.744079
+  pmid: '23170935'
+  featured: false
+  links: []
+- title: Time trials predict the competitive performance capacity of junior cross-country
+    skiers
+  author:
+  - Carlsson M
+  - Carlsson T
+  - Hammarström D
+  - Malm C
+  - Tonkonogi M
+  journal: Int J Sports Physiol Perform
+  journal_full: International journal of sports physiology and performance
+  year: 2012
+  date: '2012-10-02'
+  volume: '9'
+  issue: '1'
+  pages: 12-8
+  doi: 10.1123/ijspp.2012-0172
+  pmid: '23038700'
+  featured: false
+  links: []
+- title: Validation of physiological tests in relation to competitive performances
+    in elite male distance cross-country skiing
+  author:
+  - Carlsson M
+  - Carlsson T
+  - Hammarström D
+  - Tiivel T
+  - Malm C
+  - Tonkonogi M
+  journal: J Strength Cond Res
+  journal_full: Journal of strength and conditioning research
+  year: 2012
+  date: '2012-06-01'
+  volume: '26'
+  issue: '6'
+  pages: 1496-504
+  doi: 10.1519/JSC.0b013e318231a799
+  pmid: '22614140'
+  featured: false
+  links: []
+

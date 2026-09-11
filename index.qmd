@@ -1,36 +1,50 @@
 ---
 title: "Daniel Hammarström"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
 page-layout: full
 title-block-banner: true
+toc: false
+listing:
+  id: latest-posts
+  contents: posts
+  sort: "date desc"
+  type: table
+  max-items: 3
+  fields: [date, title]
+  sort-ui: false
+  filter-ui: false
+  categories: false
+  date-format: "D MMM YYYY"
 ---
 
-::: {.grid}
+::: {.grid .profile-grid}
 
-::: {.g-col-6}
+::: {.g-col-12 .g-col-md-4 .profile-pic-col}
 
-A profile picture
+![](profile.jpg){.profile-pic fig-alt="Portrait of Daniel Hammarström"}
 
 :::
 
-::: {.g-col-6}
+::: {.g-col-12 .g-col-md-8}
 # About
-I'm an Associate Professor at the [Inland University of Applied Sciences](https://www.inn.no), where my research interests revolves around uncovering factors that contribute to the diverse responses individuals exhibit to exercise training. My investigative approach is interdisciplinary, weaving together physiology, statistical methods and bioinformatics in  studies of exercise training.
 
-In the realm of academics, I am involved in teaching research methods with focus on statistics and molecular biology as part of our Health and Exercise Physiology Master's program. Additionally, I mentor students at various levels, overseeing the academic and research progression of Bachelor's, Master's, and Ph.D. candidates.
+I'm an Associate Professor at the [University of Inland Norway](https://www.inn.no), where my research interests concern factors that contribute to the diverse responses individuals exhibit to exercise training. My investigative approach is interdisciplinary, spanning physiology, statistical methods, and bioinformatics in studies of exercise training.
 
-I'm part of the [trainome research group](trainome.github.io), collectively we want to better understand why and how people responds to exercise training and find out how we can design better exercise training interventions for different populations.
+I currently serve as the Study Program Coordinator for our master's program in [Exercise physiology](https://www.inn.no/studier/vare-studier/master-i-treningsfysiologi/index.html). I [teach](teaching.qmd) courses in research methods, statistics, and molecular biology at the bachelor, master, and doctorate level. Additionally, I supervise bachelor, master, and Ph.D. candidates in their thesis work.
 
-You can read my blog below or find me on [Twitter](https://twitter.com/dhammarstrom), [Mastodon](https://mastodon.social/@dhammarstrom) or
-[GitHub](https://github.com/dhammarstrom).
+I'm part of the [trainome research group](trainome.github.io). Collectively, we want to better understand why and how people respond to exercise training and how we can design better interventions for different populations.
+
+
+<i class="bi bi-bluesky" aria-hidden="true"></i> [\@dhammarstrom.bsky.social](https://bsky.app/profile/dhammarstrom.bsky.social)  
+<i class="bi bi-github" aria-hidden="true"></i> [GitHub](https://github.com/dhammarstrom)
 
 
 :::
 
 :::
+
+## Latest from the blog
+
+::: {#latest-posts}
+:::
+
+[All posts →](blog.qmd)

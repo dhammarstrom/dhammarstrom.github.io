@@ -1,0 +1,111 @@
+<%
+// Renders publications.yml. Items arrive sorted newest first; this template
+// splits them into a Featured section and everything else.
+//
+// The whole listing is built as one string and emitted unindented at the
+// bottom -- indented output would be parsed as a markdown code block.
+
+const isFeatured = (item) => {
+  const f = item.featured;
+  if (f === true) return true;
+  if (typeof f === "string") return ["true", "yes", "y", "1"].includes(f.trim().toLowerCase());
+  return false;
+};
+
+const authorNames = (item) => {
+  const a = item.author;
+  if (!a) return [];
+  const list = Array.isArray(a) ? a : [a];
+  return list.map((x) => (typeof x === "string" ? x : (x && x.name) || "")).filter(Boolean);
+};
+
+const esc = (s) => String(s == null ? "" : s)
+  .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+  .replace(/"/g, "&quot;");
+
+// The title links to the DOI when there is one, otherwise to PubMed.
+const primaryHref = (item) => {
+  if (item.doi) return "https://doi.org/" + item.doi;
+  if (item.pmid) return "https://pubmed.ncbi.nlm.nih.gov/" + item.pmid + "/";
+  return null;
+};
+
+// "J Physiol 601(22): 5183-5194, 2023"
+const journalLine = (item) => {
+  let out = "";
+  if (item.journal) out += "<em>" + esc(item.journal) + "</em>";
+  if (item.volume) {
+    out += " " + esc(item.volume);
+    if (item.issue) out += "(" + esc(item.issue) + ")";
+  }
+  if (item.pages) out += (item.volume ? ": " : " ") + esc(item.pages);
+  if (item.year) out += (out ? ", " : "") + esc(item.year);
+  return out;
+};
+
+const renderItem = (item) => {
+  const href = primaryHref(item);
+  const title = esc(item.title);
+  let html = '<div class="pub-item">';
+
+  html += '<div class="pub-title">' +
+    (href ? '<a href="' + esc(href) + '">' + title + "</a>" : title) +
+    "</div>";
+
+  const authors = authorNames(item);
+  if (authors.length) {
+    html += '<div class="pub-authors">' + esc(authors.join(", ")) + "</div>";
+  }
+
+  const journal = journalLine(item);
+  if (journal) html += '<div class="pub-journal">' + journal + "</div>";
+
+  if (item.description) {
+    html += '<div class="pub-description">' + esc(item.description) + "</div>";
+  }
+
+  // PubMed gets a link of its own, since the title may point at the DOI.
+  const links = [];
+  if (item.pmid) {
+    links.push({
+      text: "PubMed",
+      href: "https://pubmed.ncbi.nlm.nih.gov/" + item.pmid + "/",
+      icon: "file-earmark-text",
+    });
+  }
+  (item.links || []).forEach((l) => {
+    if (l && l.href) links.push(l);
+  });
+
+  if (links.length) {
+    html += '<div class="pub-links">';
+    links.forEach((l) => {
+      html += '<a class="pub-link" href="' + esc(l.href) + '">';
+      if (l.icon) html += '<i class="bi bi-' + esc(l.icon) + '" aria-hidden="true"></i> ';
+      html += esc(l.text || l.href) + "</a>";
+    });
+    html += "</div>";
+  }
+
+  return html + "</div>";
+};
+
+const section = (heading, entries) =>
+  '<h2 class="pub-section-heading">' + esc(heading) + "</h2>" +
+  '<div class="pub-group">' + entries.map(renderItem).join("") + "</div>";
+
+const featured = items.filter(isFeatured);
+const rest = items.filter((item) => !isFeatured(item));
+
+let out = '<div class="pub-listing">';
+if (featured.length) out += section("Featured", featured);
+if (rest.length) out += section(featured.length ? "All publications" : "Publications", rest);
+if (!items.length) {
+  out += "<p>No publications yet. Run <code>Rscript scripts/update-publications.R</code>.</p>";
+}
+out += "</div>";
+%>
+
+```{=html}
+<%= out %>
+```
