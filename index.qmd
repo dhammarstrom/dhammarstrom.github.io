@@ -29,7 +29,7 @@ listing:
 
 I'm an Associate Professor at the [University of Inland Norway](https://www.inn.no), where my research interests concern factors that contribute to the diverse responses individuals exhibit to exercise training. My investigative approach is interdisciplinary, spanning physiology, statistical methods, and bioinformatics in studies of exercise training.
 
-I currently serve as the Study Program Coordinator for our master's program in [Exercise physiology](https://www.inn.no/studier/vare-studier/master-i-treningsfysiologi/index.html). I [teach](teaching.qmd) courses in research methods, statistics, and molecular biology at the bachelor, master, and doctorate level. Additionally, I supervise bachelor, master, and Ph.D. candidates in their thesis work.
+I currently serve as the Study Program Coordinator for our master's program in [Exercise physiology](https://www.inn.no/studier/vare-studier/master-i-treningsfysiologi/index.html). I [teach](teaching.qmd) courses in research methods, statistics, and molecular exercise biology at the bachelor, master, and doctorate level. Additionally, I supervise bachelor, master, and Ph.D. candidates in their thesis work.
 
 I'm part of the [trainome research group](trainome.github.io). Collectively, we want to better understand why and how people respond to exercise training and how we can design better interventions for different populations.
 

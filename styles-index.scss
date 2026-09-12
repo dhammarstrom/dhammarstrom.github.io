@@ -23,3 +23,65 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   margin-top: 0.5rem;
 }
+
+// "Latest from the blog": a minimal two-column list (date, title) built
+// from Quarto's table listing. No header, no table chrome, just a
+// hairline between rows.
+
+#listing-latest-posts table.quarto-listing-table {
+  width: 100%;
+  margin-bottom: 0.75rem;
+  border-collapse: collapse;
+  --bs-table-bg: transparent;
+  --bs-table-striped-bg: transparent;
+  --bs-table-hover-bg: transparent;
+  --bs-table-border-color: transparent;
+}
+
+#listing-latest-posts table.quarto-listing-table thead {
+  display: none;
+}
+
+#listing-latest-posts table.quarto-listing-table td {
+  padding: 0.55rem 0;
+  border: 0;
+  border-bottom: 1px solid rgba($primary, 0.2);
+  vertical-align: baseline;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+#listing-latest-posts table.quarto-listing-table tr:last-child td {
+  border-bottom: 0;
+}
+
+#listing-latest-posts table.quarto-listing-table td:first-child {
+  width: 7.5rem;
+  padding-right: 1rem;
+  white-space: nowrap;
+}
+
+#listing-latest-posts .listing-date {
+  font-family: $font-family-monospace;
+  font-size: 0.8rem;
+  opacity: 0.65;
+}
+
+#listing-latest-posts .listing-title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: $primary;
+  transition: color 0.15s ease;
+}
+
+#listing-latest-posts .listing-title:hover {
+  color: $secondary;
+}
+
+@media (max-width: 575.98px) {
+  #listing-latest-posts table.quarto-listing-table td:first-child {
+    width: auto;
+    padding-right: 0.75rem;
+  }
+}

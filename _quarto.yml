@@ -2,9 +2,10 @@ project:
   type: website
 
 website:
-  title: ""
+  title: "Daniel Hammarström"
   site-url: https://dhammarstrom.github.io
   navbar:
+    title: false
     left:
       - text: Home
         href: index.qmd
@@ -28,11 +29,11 @@ website:
         href: https://bsky.app/profile/dhammarstrom.bsky.social
         aria-label: Bluesky
       - icon: rss
-        href: blog.xml
+        href: blog.qmd
         aria-label: RSS
 
 format:
   html:
-    theme: [brand, styles-publications.scss, styles-index.scss, styles-banner.scss]
+    theme: [brand, styles-publications.scss, styles-teaching.scss, styles-blog.scss, styles-index.scss, styles-banner.scss]
     toc: true
     include-after-body: _includes/graph-banner.html

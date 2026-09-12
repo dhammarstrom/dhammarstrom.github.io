@@ -1,0 +1,148 @@
+<%
+// Renders teaching.yml. Entries are grouped by `type` (course, lecture,
+// supervision, admin) and sorted newest first within each group.
+//
+// The whole listing is built as one string and emitted unindented at the
+// bottom -- indented output would be parsed as a markdown code block.
+
+const esc = (s) => String(s == null ? "" : s)
+  .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+  .replace(/"/g, "&quot;");
+
+const str = (v) => (v == null ? "" : String(v).trim());
+
+// Description text: escaped, but Markdown links "[text](url)" become <a>.
+const rich = (s) => esc(s).replace(
+  /\[([^\]]+)\]\(([^)\s]+)\)/g,
+  (_, text, href) => '<a href="' + href + '">' + text + "</a>"
+);
+const typeOf = (item) => str(item.type).toLowerCase();
+
+// "2019", "2019-08-15" or a Date -> sortable number (year + fraction)
+const when = (v) => {
+  if (v == null || v === "") return null;
+  if (v instanceof Date) return v.getFullYear() + (v.getMonth() / 12);
+  const m = String(v).match(/^(\d{4})(?:-(\d{1,2}))?(?:-(\d{1,2}))?/);
+  if (!m) return null;
+  return Number(m[1]) + (m[2] ? (Number(m[2]) - 1) / 12 : 0) + (m[3] ? Number(m[3]) / 372 : 0);
+};
+
+// Show a year as is and a full date as "12 Oct 2023".
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const showDate = (v) => {
+  if (v == null || v === "") return "";
+  if (v instanceof Date) return v.getUTCDate() + " " + MONTHS[v.getUTCMonth()] + " " + v.getUTCFullYear();
+  const m = String(v).match(/^(\d{4})(?:-(\d{1,2}))?(?:-(\d{1,2}))?$/);
+  if (!m) return str(v);
+  if (m[3]) return Number(m[3]) + " " + MONTHS[Number(m[2]) - 1] + " " + m[1];
+  if (m[2]) return MONTHS[Number(m[2]) - 1] + " " + m[1];
+  return m[1];
+};
+
+// Courses and roles without an `end` are ongoing ("2018–"); a lecture is a
+// single event, so it just shows its date.
+const period = (item) => {
+  const a = showDate(item.start), b = showDate(item.end);
+  if (a && b) return a === b ? a : a + "–" + b;
+  if (a) return typeOf(item) === "lecture" ? a : a + "–";
+  return b;
+};
+
+// Newest first: open-ended entries on top, then by end, then by start.
+const sortKey = (item) => {
+  const e = when(item.end), s = when(item.start);
+  if (e == null) return 1e9 + (s || 0);
+  return e * 1000 + (s || 0);
+};
+const byDate = (a, b) => sortKey(b) - sortKey(a);
+
+const link = (text, href, icon) => {
+  let html = '<a class="teach-link" href="' + esc(href) + '">';
+  if (icon) html += '<i class="bi bi-' + esc(icon) + '" aria-hidden="true"></i> ';
+  return html + esc(text) + "</a>";
+};
+
+// Shortcut fields (syllabus, notes, slides) come first, then `links`.
+const linkList = (item, shortcuts) => {
+  const out = [];
+  shortcuts.forEach(([field, text, icon]) => {
+    const href = str(item[field]);
+    if (href) out.push(link(text, href, icon));
+  });
+  const extra = Array.isArray(item.links) ? item.links : [];
+  extra.forEach((l) => {
+    if (l && l.href) out.push(link(l.text || l.href, l.href, l.icon));
+  });
+  return out.length ? '<div class="teach-links">' + out.join("") + "</div>" : "";
+};
+
+const metaLine = (parts) => {
+  const p = parts.map(str).filter(Boolean);
+  return p.length ? '<div class="teach-meta">' + p.map(esc).join(" · ") + "</div>" : "";
+};
+
+const renderItem = (item) => {
+  const type = typeOf(item);
+  let html = '<div class="teach-item teach-' + esc(type) + '">';
+
+  html += '<div class="teach-head">';
+  html += '<div class="teach-title">' + esc(item.title);
+  if (type === "course" && str(item.code)) html += ' <span class="teach-code">' + esc(item.code) + "</span>";
+  html += "</div>";
+  const p = period(item);
+  if (p) html += '<div class="teach-period">' + esc(p) + "</div>";
+  html += "</div>";
+
+  if (type === "course") {
+    html += metaLine([item.role, item.level, item.credits, item.institution]);
+  } else if (type === "lecture") {
+    html += metaLine([item.course, item.institution]);
+  } else if (type === "supervision") {
+    html += metaLine([item.role, item.level, item.student, item.institution]);
+  } else {
+    html += metaLine([item.role, item.organisation, item.institution]);
+  }
+
+  if (str(item.description)) {
+    html += '<div class="teach-description">' + rich(item.description) + "</div>";
+  }
+
+  if (type === "course") {
+    html += linkList(item, [["syllabus", "Syllabus", "file-earmark-text"], ["notes", "Course notes", "journal-text"]]);
+  } else if (type === "lecture") {
+    html += linkList(item, [["slides", "Slides", "easel"], ["notes", "Lecture notes", "journal-text"]]);
+  } else if (type === "supervision") {
+    html += linkList(item, [["thesis", "Thesis", "mortarboard"]]);
+  } else {
+    html += linkList(item, []);
+  }
+
+  return html + "</div>";
+};
+
+const section = (heading, entries) =>
+  '<h2 class="teach-section-heading">' + esc(heading) + "</h2>" +
+  '<div class="teach-group">' + entries.slice().sort(byDate).map(renderItem).join("") + "</div>";
+
+const SECTIONS = [
+  ["course", "Courses"],
+  ["lecture", "Lectures"],
+  ["supervision", "Supervision"],
+  ["admin", "Teaching administration"],
+];
+
+let out = '<div class="teach-listing">';
+SECTIONS.forEach(([type, heading]) => {
+  const entries = items.filter((item) => typeOf(item) === type);
+  if (entries.length) out += section(heading, entries);
+});
+const known = SECTIONS.map((s) => s[0]);
+const other = items.filter((item) => !known.includes(typeOf(item)));
+if (other.length) out += section("Other", other);
+if (!items.length) out += "<p>Nothing listed yet. Add entries to <code>teaching.yml</code>.</p>";
+out += "</div>";
+%>
+
+```{=html}
+<%= out %>
+```

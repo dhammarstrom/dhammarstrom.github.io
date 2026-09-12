@@ -1,23 +1,39 @@
 /*-- scss:defaults --*/
 
 // Palette entries from _brand.yml (not exposed as variables by brand).
-$banner-bg: #21260F !default;   // darkgreen
-$banner-fg: #ecf0f1 !default;   // light
+$banner-light: #46503D !default;  // lightgreen
+$banner-dark: #21260F !default;   // darkgreen
+$banner-fg: #ecf0f1 !default;     // light
+// Same horizontal gradient on the navbar and the banner so the two
+// full-width blocks line up without a visible seam.
+$banner-gradient: linear-gradient(90deg, $banner-light 0%, $banner-dark 100%) !default;
 
 /*-- scss:rules --*/
 
 // Animated network graph behind the title banner (injected by
-// _includes/graph-banner.html). The navbar keeps the same dark colour
+// _includes/graph-banner.html). The navbar shares the banner's gradient
 // so the header still reads as one block.
 
 .navbar {
-  background-color: $banner-bg;
+  background-color: $banner-dark;
+  background-image: $banner-gradient;
 }
 
 .quarto-title-banner {
   position: relative;
-  background-color: $banner-bg;
+  background-color: $banner-dark;
+  background-image: $banner-gradient;
   overflow: hidden;
+  // A little taller than Quarto's default (2.5em / 1em) to give the
+  // graph more room.
+  @media (min-width: 992px) {
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+  }
+  @media (max-width: 991.98px) {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
 }
 
 .graph-canvas {

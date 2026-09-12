@@ -1,1 +1,15 @@
-# My teaching
+---
+title: "Teaching"
+listing:
+  - id: teaching
+    contents: teaching.yml
+    template: _templates/teaching.ejs
+    sort: false
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    page-size: 500
+---
+
+::: {#teaching}
+:::

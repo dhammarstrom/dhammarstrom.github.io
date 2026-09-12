@@ -1,0 +1,33 @@
+---
+title: "Bad habits in data analysis"
+description: "A non-complete list of good and bad habits in data analysis"
+author: "Daniel Hammarström"
+date: "2026-09-12"
+categories: [teaching, notes]
+draft: true
+---
+
+
+
+
+- Organize projects in a consistent way <!--Karl Broman  -->
+- Make projects self-contained (e.g. RStudio projects/Github)
+- Create and maintain documentation, start with README
+- Identify one weakness in your workflow, improve and proceed with the next <!-- Karl Broman -->
+- Share your data
+- Share your code
+- Name files in a consistent way <!--  --->
+- Stay as true as possible to a style guide
+- Be lazy! Try to minimize your code (refactor when possible)
+
+- Refactor code <!-- https://datasemantics.co/15-habits-of-highly-effective-data-scientists/  -->
+- Reanalyze data sets <!-- Andrew Gelman https://statmodeling.stat.columbia.edu/2023/10/04/you-can-learn-a-lot-from-reanalyzing-data-signing-at-the-beginning-example-but-also-many-others/ -->
+- Every operation in your project should be scripted <!-- Karl Broman "everything with a script" -->
+- Simulate! <!-- Statistical rethinking among others -->
+- Convert scripts and repeated code into functions <!-- Broman et al -->
+- Document functions as part of packages <!-- Broman et al -->
+- Document data
+- Use version control
+- Comment your code!
+- Compartmentalize analyses, small scripts, incremental steps.
+

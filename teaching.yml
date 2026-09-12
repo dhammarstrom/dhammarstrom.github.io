@@ -1,0 +1,127 @@
+# Teaching duties listed on teaching.qmd -- edit freely.
+#
+# Every entry needs a `type`, which decides the section it is shown in:
+#
+#   course       a course you run or teach in
+#   lecture      a single lecture, seminar or workshop
+#   supervision  student supervision (one entry per level, or per student)
+#   admin        an administrative or leadership role related to teaching
+#
+# Entries are sorted newest first within each section (by `end`, then
+# `start`); an open-ended entry (no `end`) sorts to the top.
+#
+# Fields common to all types:
+#   title:        shown as the heading (required)
+#   start:        year or date, e.g. 2019 or 2019-08-15
+#   end:          year or date; leave out for something still ongoing
+#   institution:  shown after the title
+#   description:  one or two sentences (optional); Markdown-style links
+#                 work here, e.g. "Students: [Name](https://...)"
+#   links:        extra links -- same format as in publications.yml
+#     - text: Course page
+#       href: https://...
+#       icon: link-45deg     # any Bootstrap icon name (optional)
+#
+# Type-specific fields (syllabus, notes and slides are URLs or paths and
+# render as links before anything listed under `links`):
+#   course:       code, level, credits, role, syllabus, notes
+#   lecture:      course (name of the course it belongs to), notes, slides
+#   supervision:  level (PhD, Master's, ...), role (main/co-supervisor),
+#                 student, thesis (link)
+#   admin:        organisation, role
+#
+# The entries below are examples -- replace them with your own.
+
+- type: course
+  title: Kvantitativ metode og statistikk (Quantitative methods and statistics)
+  code: IDR4000
+  institution: University of Inland Norway
+  level: Master's programme in Health and Exercise Physiology
+  credits: 20 ECTS
+  role: Course coordinator and lecturer
+  start: 2018
+  description: >-
+    The course covers methods for physiological and molecular 
+    investigations and related statistical analyses.
+  syllabus: https://studiekatalog.edutorium.no/inn/nb/emne/IDR4000/2026-host
+  notes: https://dhammarstrom.github.io/quant-methods
+  links:
+    - text: Course notes
+      href: https://dhammarstrom.github.io/quant-methods
+      icon: link-45deg
+
+- type: course
+  title: Scientific Communication, Collaboration and Design in Quantitative Research Using R
+  code: HEV9009
+  institution: University of Inland Norway
+  level: PhD program Health and welfare
+  credits: 7.5 ECTS
+  role: Course coordinator and Lecturer
+  start: 2025
+  description: >-
+    In the course we discuss reproducible data analysis and collaboration using R and related software.
+  notes: https://dhammarstrom.github.io/RFS
+  syllabus: https://studiekatalog.edutorium.no/inn/nb/emne/HEV9009/2025-host
+
+- type: course
+  title: Statistical Rethinking
+  code: HEV9009
+  institution: University of Inland Norway
+  level: PhD program Health and welfare
+  credits: 7.5 ECTS
+  role: Course coordinator and Seminar leader
+  start: 2025
+  description: >-
+    In this seminar we go through the excellent book
+    [Statistical Rethinking](https://www.routledge.com/Statistical-Rethinking-A-Bayesian-Course-with-Examples-in-R-and-STAN/McElreath/p/book/9780367139919) (McElreath 2020).
+  notes: https://dhammarstrom.github.io/stat-rethink-seminars/
+  syllabus: https://studiekatalog.edutorium.no/inn/nb/emne/HEV9008/2025-host
+
+
+
+
+#- type: lecture
+#  title: Introduction to mixed-effects models
+#  course: Quantitative Methods and Statistics
+#  institution: University of Inland Norway
+#  start: 2023-10-12
+#  description: >-
+#    Guest lecture on hierarchical data and mixed models in training studies.
+#  slides: https://dhammarstrom.github.io/
+#  notes: https://dhammarstrom.github.io/
+
+#- type: lecture
+#  title: RNA sequencing in exercise studies
+#  course: Molecular Exercise Physiology
+#  institution: University of Inland Norway
+#  start: 2022
+#  slides: https://dhammarstrom.github.io/
+
+- type: admin
+  title: Programme coordinator
+  organisation: Master's programme in Health and Exercise Physiology
+  institution: University of Inland Norway
+  start: 2025
+  description: >-
+    
+
+
+- type: supervision
+  title: Supervision of PhD students
+  level: PhD
+  institution: University of Inland Norway
+  start: 2021
+  description: >-
+    Current PhD students: Kristian Lian, Chidimma Echebiri, Torkil Rogneflåten.
+
+- type: supervision
+  title: Supervision of master students
+  level: Master's
+  institution: University of Inland Norway
+  start: 2019
+  
+- type: supervision
+  title: Supervision of bachelor students
+  level: Bachelor's
+  institution: University of Inland Norway
+  start: 2014
