@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Daniel Hammarström">
-<meta name="dcterms.date" content="2023-11-08">
-<meta name="description" content="Notes on transparent science">
+<meta name="dcterms.date" content="2026-09-12">
+<meta name="description" content="A non-complete list of good and bad habits in data analysis">
 
-<title>Better, transparent science – Daniel Hammarström</title>
+<title>Bad habits in data analysis – Daniel Hammarström</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -47,9 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7583d12b353bd67295cd48ac0ee3d27d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-036e829c7f09ef4e046ff1ea0ea19d86.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-c051a0bbdd79fe443667abe1febcef39.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-036e829c7f09ef4e046ff1ea0ea19d86.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-2d24313690f00e847062bbcc847db799.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-73a1504eaaea1dedb5d56f4ee5d31e7e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-2d24313690f00e847062bbcc847db799.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -77,6 +77,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="quarto:status" content="draft">
 
 
 </head>
@@ -84,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner"><div id="quarto-draft-alert" class="alert alert-warning"><i class="bi bi-pencil-square"></i>Draft</div>
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
@@ -133,10 +134,10 @@ ul.task-list li input[type="checkbox"] {
 </i> 
 <span class="menu-text"></span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../blog.html"> <i class="bi bi-rss" role="img" aria-label="RSS">
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../blog.xml"> <i class="bi bi-rss" role="img" aria-label="RSS">
 </i> 
-<span class="menu-text">Blog</span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -149,10 +150,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Better, transparent science</h1>
+      <h1 class="title">Bad habits in data analysis</h1>
                   <div>
         <div class="description">
-          Notes on transparent science
+          A non-complete list of good and bad habits in data analysis
         </div>
       </div>
                           <div class="quarto-categories">
@@ -175,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">November 8, 2023</p>
+        <p class="date">September 12, 2026</p>
       </div>
     </div>
     
@@ -196,233 +197,463 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Today in our department’s weekly lunch seminar, we discussed how to start and finish a scientific paper. My summary of the main topic of discussion is that you just need to decide on a strategy and then start writing. It does not matter whether you start with the abstract, figures, methods, or main results. Ideally, you select a journal before you start writing to be sure that you do not need to revise or restructure before first submission.</p>
-<p>I think that this is, however, secondary to another related point, which is that your paper is only one potential output from your science project. Other outputs could include the dataset and the source code used to generate the paper. These could be combined in a version-controlled repository and made public to be transparent about the whole process.</p>
-<p>Aiming for transparency affects the way you think about preparing your manuscript. Writing traceable source files for the manuscripts invites you to explain how and why you prepared and analyzed the data as you did. To align the manuscript to the source file, you might need to drop some troublesome ideals of scientific writing. One such ideal is the tendency to build a scientific investigation on a (genius) hypothesis. This hypothesis is, of course, formulated in advance of collecting any data and is confirmed in the paper. In reality, many papers lack a formal, detailed pre-data hypothesis. It is probably, in many cases, made up to fit the format of hypothesis-driven research, a practice known as <a href="https://en.wikipedia.org/wiki/HARKing">HARKing</a>.</p>
-<p>In my own work, I think the most important aspect of all this is to aim for small incremental improvements in every project. This is to acknowledge that what I did previously could be improved, and that what I will do next will still not be perfect. Aiming for perfection right away will likely push us towards hiding imperfections, leading to less transparency and more bad science.</p>
+<ul>
+<li><p>Organize projects in a consistent way <!--Karl Broman  --></p></li>
+<li><p>Make projects self-contained (e.g.&nbsp;RStudio projects/Github)</p></li>
+<li><p>Create and maintain documentation, start with README</p></li>
+<li><p>Identify one weakness in your workflow, improve and proceed with the next <!-- Karl Broman --></p></li>
+<li><p>Share your data</p></li>
+<li><p>Share your code</p></li>
+<li><p>Name files in a consistent way <!--  ---></p></li>
+<li><p>Stay as true as possible to a style guide</p></li>
+<li><p>Be lazy! Try to minimize your code (refactor when possible)</p></li>
+<li><p>Refactor code <!-- https://datasemantics.co/15-habits-of-highly-effective-data-scientists/  --></p></li>
+<li><p>Reanalyze data sets <!-- Andrew Gelman https://statmodeling.stat.columbia.edu/2023/10/04/you-can-learn-a-lot-from-reanalyzing-data-signing-at-the-beginning-example-but-also-many-others/ --></p></li>
+<li><p>Every operation in your project should be scripted <!-- Karl Broman "everything with a script" --></p></li>
+<li><p>Simulate! <!-- Statistical rethinking among others --></p></li>
+<li><p>Convert scripts and repeated code into functions <!-- Broman et al --></p></li>
+<li><p>Document functions as part of packages <!-- Broman et al --></p></li>
+<li><p>Document data</p></li>
+<li><p>Use version control</p></li>
+<li><p>Comment your code!</p></li>
+<li><p>Compartmentalize analyses, small scripts, incremental steps.</p></li>
+</ul>
 
 
 
 </main> <!-- /main -->
 <script>
+
 // Connected 3D network graph drawn behind the title banner.
+
 // Node colours cycle through the first five entries of the _brand.yml
+
 // palette; edges share one fixed colour. The graph rotates slowly about
+
 // both axes. Hovering steers it: horizontal mouse position sets the spin
+
 // around the vertical axis, vertical position the spin around the
+
 // horizontal axis (further from the centre = faster). Clicking on the
+
 // banner adds a new node at the pointer, linked to its nearest neighbours.
+
 (function () {
+
   var PALETTE = ["#21260F", "#46503D", "#D2D4D1", "#400101", "#BF4545"];
+
+  var BACKGROUND = "#46503D";
+
   var EDGE_COLOR = "#D2D4D1";
+
   var N_NODES = 5;         // nodes at start; more are added by clicking
+
   var K_NEIGHBOURS = 3;
+
   var NODE_RADIUS = 3.5;   // base radius (px); scaled by perspective
+
   var NODE_RADIUS_MIN = 2.5;
+
   var BASE_SPEED_Y = 0.12; // idle spin around the vertical axis (rad/s)
+
   var BASE_SPEED_X = 0.05; // idle spin around the horizontal axis (rad/s)
+
   var MAX_SPEED = 1.2;     // spin at the canvas edge while hovering (rad/s)
+
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+
+
   function init() {
+
     var banner = document.querySelector(".quarto-title-banner");
+
     if (!banner) return;
+
     var hosts = [banner];
 
+
+
     var canvases = hosts.map(function (host) {
+
       var c = document.createElement("canvas");
+
       c.className = "graph-canvas";
+
       c.setAttribute("aria-hidden", "true");
+
       host.insertBefore(c, host.firstChild);
+
       return { el: c, host: host, ctx: c.getContext("2d"), offsetY: 0, w: 0, h: 0 };
+
     });
+
+
 
     // ---- build a connected graph ----
+
     // Every node is added through addNode(), which links it to its
+
     // K_NEIGHBOURS nearest existing nodes. Since each newcomer attaches to
+
     // the existing graph, the graph stays connected without a repair step.
+
     var rng = mulberry32(20260911);
+
     var nodes = [], edges = [], seen = {};
+
     function addEdge(a, b) {
+
       var key = a < b ? a + "-" + b : b + "-" + a;
+
       if (a === b || seen[key]) return;
+
       seen[key] = true;
+
       edges.push({ a: a, b: b });
+
     }
+
     function addNode(x, y, z) {
+
       var i = nodes.length;
+
       var n = { x: x, y: y, z: z, color: PALETTE[i % PALETTE.length] };
+
       var d = nodes.map(function (m, j) { return { j: j, d: dist(n, m) }; })
+
         .sort(function (p, q) { return p.d - q.d; });
+
       nodes.push(n);
+
       for (var k = 0; k < K_NEIGHBOURS && k < d.length; k++) addEdge(i, d[k].j);
+
       return i;
+
     }
+
     for (var i = 0; i < N_NODES; i++) {
+
       // roughly uniform inside a sphere, stretched horizontally later
+
       var u = rng() * 2 - 1, t = rng() * Math.PI * 2, r = Math.cbrt(rng());
+
       var s = Math.sqrt(1 - u * u);
+
       addNode(r * s * Math.cos(t), r * u, r * s * Math.sin(t));
+
     }
+
+
 
     // ---- animation state ----
+
     var angleY = 0, angleX = 0.35;
+
     var speedY = BASE_SPEED_Y, speedX = BASE_SPEED_X;
+
     var targetY = BASE_SPEED_Y, targetX = BASE_SPEED_X;
+
     var totalW = 0, totalH = 0, dpr = 1;
+
     var PERSP_A = 1.35, PERSP_B = 0.35; // persp = 1 / (PERSP_A - z * PERSP_B)
 
+
+
     // The graph is centred in the right half of the banner on wider
+
     // screens (the title sits on the left); on narrow screens it spans
-    // the full width. One scale is used for both screen axes so the
-    // node cloud stays a sphere rather than an ellipsoid that appears to
-    // squash and stretch as it rotates; the scale is the smaller of what
-    // the available width and height allow.
+
+    // the full width.
+
     function viewScale() {
+
       var right = totalW >= 768;
-      var sx = right ? totalW * 0.45 : totalW * 0.9;
-      var sy = Math.max(totalH * 0.85, 90);
+
       return {
+
         cx: right ? totalW * 0.75 : totalW / 2,
+
         cy: totalH / 2,
-        s: Math.min(sx, sy)
+
+        sx: right ? totalW * 0.45 : totalW * 0.9,
+
+        sy: Math.max(totalH * 0.85, 90)
+
       };
+
     }
+
+
 
     // Map a click on a canvas back into model space: undo the perspective
+
     // at a random depth, then undo the current rotation so the node stays
+
     // where it was clicked while the graph keeps spinning.
+
     function addNodeAt(evt, c) {
+
       var r = c.el.getBoundingClientRect();
+
       var px = evt.clientX - r.left, py = evt.clientY - r.top + c.offsetY;
+
       var v = viewScale();
+
       var z = (rng() * 2 - 1) * 0.6;
+
       var persp = 1 / (PERSP_A - z * PERSP_B);
-      var x = (px - v.cx) / (v.s * persp), y = (py - v.cy) / (v.s * persp);
+
+      var x = (px - v.cx) / (v.sx * persp), y = (py - v.cy) / (v.sy * persp);
+
       // inverse of the X rotation, then of the Y rotation used in frame()
+
       var ct = Math.cos(angleX), st = Math.sin(angleX);
+
       var y0 = y * ct + z * st, z1 = -y * st + z * ct;
+
       var ca = Math.cos(angleY), sa = Math.sin(angleY);
+
       var x0 = x * ca + z1 * sa, z0 = -x * sa + z1 * ca;
+
       addNode(x0, y0, z0);
+
     }
+
+
 
     function layout() {
+
       dpr = Math.min(window.devicePixelRatio || 1, 2);
+
       var top = Infinity;
+
       canvases.forEach(function (c) {
+
         var r = c.host.getBoundingClientRect();
+
         c.w = r.width; c.h = r.height; c.offsetY = r.top;
+
         if (r.top < top) top = r.top;
+
         c.el.width = Math.round(r.width * dpr);
+
         c.el.height = Math.round(r.height * dpr);
+
       });
+
       totalW = 0; totalH = 0;
+
       canvases.forEach(function (c) {
+
         c.offsetY -= top;
+
         totalW = Math.max(totalW, c.w);
+
         totalH = Math.max(totalH, c.offsetY + c.h);
+
       });
+
     }
+
+
 
     function steer(evt, c) {
+
       var r = c.el.getBoundingClientRect();
+
       var nx = ((evt.clientX - r.left) / r.width - 0.5) * 2;   // -1 .. 1
+
       var ny = ((evt.clientY - r.top) / r.height - 0.5) * 2;   // -1 .. 1
+
       targetY = nx * MAX_SPEED;
+
       targetX = ny * MAX_SPEED * 0.6;
+
     }
+
     canvases.forEach(function (c) {
+
       c.host.addEventListener("mousemove", function (e) { steer(e, c); });
+
       c.host.addEventListener("mouseleave", function () { targetY = BASE_SPEED_Y; targetX = BASE_SPEED_X; });
+
       c.host.addEventListener("click", function (e) {
+
         // leave links and buttons inside the banner alone
+
         if (e.target.closest && e.target.closest("a, button")) return;
+
         addNodeAt(e, c);
+
       });
+
     });
 
+
+
     var last = performance.now();
+
     function frame(now) {
+
       var dt = Math.min((now - last) / 1000, 0.05);
+
       last = now;
+
       if (!reduced) {
+
         var ease = Math.min(1, dt * 2.5);
+
         speedY += (targetY - speedY) * ease;
+
         speedX += (targetX - speedX) * ease;
+
         angleY += speedY * dt;
+
         angleX += speedX * dt;
+
       }
 
+
+
       // project once in combined coordinates
+
       var v = viewScale();
-      var cx = v.cx, cy = v.cy, scale = v.s;
+
+      var cx = v.cx, cy = v.cy, scaleX = v.sx, scaleY = v.sy;
+
       var ca = Math.cos(angleY), sa = Math.sin(angleY), ct = Math.cos(angleX), st = Math.sin(angleX);
+
       var proj = nodes.map(function (n) {
+
         var x = n.x * ca - n.z * sa, z = n.x * sa + n.z * ca;
+
         var y = n.y * ct - z * st; z = n.y * st + z * ct;
+
         var persp = 1 / (PERSP_A - z * PERSP_B);
-        return { x: cx + x * scale * persp, y: cy + y * scale * persp, z: z, p: persp, color: n.color };
+
+        return { x: cx + x * scaleX * persp, y: cy + y * scaleY * persp, z: z, p: persp, color: n.color };
+
       });
+
+
 
       canvases.forEach(function (c) {
+
         var ctx = c.ctx;
+
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-        // Clear rather than fill so the CSS gradient on the banner shows through.
-        ctx.clearRect(0, 0, c.w, c.h);
+
+        ctx.fillStyle = BACKGROUND;
+
+        ctx.fillRect(0, 0, c.w, c.h);
+
         ctx.translate(0, -c.offsetY);
+
         ctx.lineCap = "round";
+
         ctx.strokeStyle = EDGE_COLOR;
+
         edges.forEach(function (e) {
+
           var a = proj[e.a], b = proj[e.b];
+
           var depth = (a.z + b.z) / 2;               // -1 .. 1
+
           ctx.globalAlpha = 0.18 + 0.32 * (depth + 1) / 2;
+
           ctx.lineWidth = 0.8 + 1.0 * (depth + 1) / 2;
+
           ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+
         });
+
         // draw far nodes first so near ones sit on top
+
         proj.slice().sort(function (a, b) { return a.z - b.z; }).forEach(function (p) {
+
           ctx.globalAlpha = 0.6 + 0.4 * (p.z + 1) / 2;
+
           ctx.fillStyle = p.color;
+
           ctx.beginPath(); ctx.arc(p.x, p.y, NODE_RADIUS_MIN + NODE_RADIUS * p.p, 0, Math.PI * 2); ctx.fill();
+
           ctx.globalAlpha = 0.9;
+
           ctx.lineWidth = 1;
+
           ctx.strokeStyle = EDGE_COLOR;
+
           ctx.stroke();
+
           ctx.strokeStyle = EDGE_COLOR;
+
         });
+
         ctx.globalAlpha = 1;
+
       });
+
       requestAnimationFrame(frame);
+
     }
+
+
 
     layout();
+
     window.addEventListener("resize", layout);
+
     // banner size changes when web fonts load; follow it
+
     if (window.ResizeObserver) {
+
       var ro = new ResizeObserver(layout);
+
       hosts.forEach(function (h) { ro.observe(h); });
+
     } else {
+
       setTimeout(layout, 500);
+
     }
+
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+
     requestAnimationFrame(frame);
+
   }
+
+
 
   function dist(a, b) { var dx = a.x - b.x, dy = a.y - b.y, dz = a.z - b.z; return Math.sqrt(dx * dx + dy * dy + dz * dz); }
+
   function mulberry32(a) {
+
     return function () {
+
       a |= 0; a = a + 0x6D2B79F5 | 0;
+
       var t = Math.imul(a ^ a >>> 15, 1 | a);
+
       t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+
       return ((t ^ t >>> 14) >>> 0) / 4294967296;
+
     };
+
   }
 
+
+
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+
   else init();
+
 })();
+
 </script>
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

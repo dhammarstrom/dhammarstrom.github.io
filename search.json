@@ -2,9 +2,9 @@
   {
     "objectID": "teaching.html",
     "href": "teaching.html",
-    "title": "My teaching",
+    "title": "Teaching",
     "section": "",
-    "text": "My teaching"
+    "text": "CoursesScientific Communication, Collaboration and Design in Quantitative Research Using R HEV90092025–Course coordinator and Lecturer · PhD program Health and welfare · 7.5 ECTS · University of Inland NorwayIn the course we discuss reproducible data analysis and collaboration using R and related software. Syllabus Course notesStatistical Rethinking HEV90092025–Course coordinator and Seminar leader · PhD program Health and welfare · 7.5 ECTS · University of Inland NorwayIn this seminar we go through the excellent book Statistical Rethinking (McElreath 2020). Syllabus Course notesKvantitativ metode og statistikk (Quantitative methods and statistics) IDR40002018–Course coordinator and lecturer · Master's programme in Health and Exercise Physiology · 20 ECTS · University of Inland NorwayThe course covers methods for physiological and molecular  investigations and related statistical analyses. Syllabus Course notes Course notesSupervisionSupervision of PhD students2021–PhD · University of Inland NorwayCurrent PhD students: Kristian Lian, Chidimma Echebiri, Torkil Rogneflåten.Supervision of master students2019–Master's · University of Inland NorwaySupervision of bachelor students2014–Bachelor's · University of Inland NorwayTeaching administrationProgramme coordinator2025–Master's programme in Health and Exercise Physiology · University of Inland Norway\nNo matching items"
   },
   {
     "objectID": "publications.html",
@@ -21,11 +21,18 @@
     "text": "Yesterday, I started this year’s version of my course, Scientific Communication, Collaboration and Design in Quantitative Research Using R. In the course, we use R and related software to visualize data, collaborate in complex data analysis projects, manage (medium-sized) data sets, and express scientific ideas as visualizations and mathematical formulas. A lot of the course is dedicated to ways we can improve our reproducible science skills.\nTo get started, I presented two sad stories about scientific projects being held up by shortcuts that make it harder to reproduce results. Such shortcuts could be working with raw data in Excel sheets, not scripting analyses, or not maintaining an environment with fixed package versions. The sad part of the stories is that, to finalize the projects, a lot of effort was required to offset the costs of bad habits at the start.\nRoger Peng (Peng 2011) has a nice illustration of the replication/reproducibility continuum; it suggests that as more components that enable reproducibility are added to a project, it gets closer to the minimum standard of being fully reproducible. However, my experience is that we could understand the relationship between effort and reproducibility as an S-shaped curve (Figure 1). Much effort is required in the beginning to go from zero to, let’s say, 20% on the “reproducibility scale”. Then we reach a zone where we gain a lot, with little extra effort. However, really pushing a project all the way to 100% again requires considerable effort.\n\n\n\n\n\n\n\n\nFigure 1\n\n\n\n\n\nI hope the takeaway from the course introduction was that we should aim to do a little better at every opportunity. The aim of the course is to make it easier to do a little better.\n\n\n\n\nReferences\n\nPeng, R. D. 2011. “Reproducible Research in Computational Science.” Science 334 (6060): 1226–27. https://doi.org/10.1126/science.1213847."
   },
   {
-    "objectID": "posts/a-new-start/index.html",
-    "href": "posts/a-new-start/index.html",
-    "title": "A new attempt at a website",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Daniel Hammarström",
     "section": "",
-    "text": "My previous attempts at maintaining a website have been failures. Why? Probably because the format triggers a non-trivial amount of bad academic habits and feelings like procrastination, focusing on unimportant details, seeking perfection, inferiority complex and so on. Another issue was probably that I (still) do not know who would like to read these notes.\nMy new attempt therefore has the following basic rules.\n\nWrite short posts.\nWrite for my own memory.\nAdd/link stuff that I’ve done.\nDo not over-think posts.\n\nGreat, the first post is done!"
+    "text": "I’m an Associate Professor at the University of Inland Norway, where my research interests concern factors that contribute to the diverse responses individuals exhibit to exercise training. My investigative approach is interdisciplinary, spanning physiology, statistical methods, and bioinformatics in studies of exercise training.\nI currently serve as the Study Program Coordinator for our master’s program in Exercise physiology. I teach courses in research methods, statistics, and molecular exercise biology at the bachelor, master, and doctorate level. Additionally, I supervise bachelor, master, and Ph.D. candidates in their thesis work.\nI’m part of the trainome research group. Collectively, we want to better understand why and how people respond to exercise training and how we can design better interventions for different populations.\n @dhammarstrom.bsky.social\n GitHub"
+  },
+  {
+    "objectID": "index.html#latest-from-the-blog",
+    "href": "index.html#latest-from-the-blog",
+    "title": "Daniel Hammarström",
+    "section": "Latest from the blog",
+    "text": "Latest from the blog\n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\n\n\n\n\n\n11 Sep 2026\n\n\nStarting my course with two sad stories\n\n\n\n\n\n\n8 Nov 2023\n\n\nBetter, transparent science\n\n\n\n\n\n\n2 Nov 2023\n\n\nA new attempt at a website\n\n\n\n\n\n\nNo matching items\n\nAll posts →"
   },
   {
     "objectID": "blog.html",
@@ -35,18 +42,11 @@
     "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nStarting my course with two sad stories\n\n\n\nteaching\n\nnotes\n\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nBetter, transparent science\n\n\n\nteaching\n\nnotes\n\n\n\nNotes on transparent science\n\n\n\n\n\nNov 8, 2023\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\nA new attempt at a website\n\n\n\nnews\n\nblog\n\nnotes\n\n\n\n\n\n\n\n\n\nNov 2, 2023\n\n1 min\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Daniel Hammarström",
+    "objectID": "posts/a-new-start/index.html",
+    "href": "posts/a-new-start/index.html",
+    "title": "A new attempt at a website",
     "section": "",
-    "text": "I’m an Associate Professor at the University of Inland Norway, where my research interests concern factors that contribute to the diverse responses individuals exhibit to exercise training. My investigative approach is interdisciplinary, spanning physiology, statistical methods, and bioinformatics in studies of exercise training.\nI currently serve as the Study Program Coordinator for our master’s program in Exercise physiology. I teach courses in research methods, statistics, and molecular biology at the bachelor, master, and doctorate level. Additionally, I supervise bachelor, master, and Ph.D. candidates in their thesis work.\nI’m part of the trainome research group. Collectively, we want to better understand why and how people respond to exercise training and how we can design better interventions for different populations.\n @dhammarstrom.bsky.social\n GitHub"
-  },
-  {
-    "objectID": "index.html#latest-from-the-blog",
-    "href": "index.html#latest-from-the-blog",
-    "title": "Daniel Hammarström",
-    "section": "Latest from the blog",
-    "text": "Latest from the blog\n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\n\n\n\n\n\n11 Sep 2026\n\n\nStarting my course with two sad stories\n\n\n\n\n\n\n8 Nov 2023\n\n\nBetter, transparent science\n\n\n\n\n\n\n2 Nov 2023\n\n\nA new attempt at a website\n\n\n\n\n\n\nNo matching items\n\nAll posts →"
+    "text": "My previous attempts at maintaining a website have been failures. Why? Probably because the format triggers a non-trivial amount of bad academic habits and feelings like procrastination, focusing on unimportant details, seeking perfection, inferiority complex and so on. Another issue was probably that I (still) do not know who would like to read these notes.\nMy new attempt therefore has the following basic rules.\n\nWrite short posts.\nWrite for my own memory.\nAdd/link stuff that I’ve done.\nDo not over-think posts.\n\nGreat, the first post is done!"
   },
   {
     "objectID": "posts/good-science/index.html",

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Daniel Hammarström</title>
+<link>https://dhammarstrom.github.io/blog.html</link>
+<atom:link href="https://dhammarstrom.github.io/blog.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.9.27</generator>
+<lastBuildDate>Thu, 10 Sep 2026 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Starting my course with two sad stories</title>
+  <dc:creator>Daniel Hammarström</dc:creator>
+  <link>https://dhammarstrom.github.io/posts/sad-story/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Yesterday, I started this year’s version of my course, <a href="https://studiekatalog.edutorium.no/inn/nb/course/HEV9009/2026-autumn"><em>Scientific Communication, Collaboration and Design in Quantitative Research Using R</em></a>. In the course, we use R and related software to visualize data, collaborate in complex data analysis projects, manage (medium-sized) data sets, and express scientific ideas as visualizations and mathematical formulas. A lot of the course is dedicated to ways we can improve our reproducible science skills.</p>
+<p>To get started, I presented two sad stories about scientific projects being held up by shortcuts that make it harder to reproduce results. Such shortcuts could be working with raw data in Excel sheets, not scripting analyses, or not maintaining an environment with fixed package versions. The sad part of the stories is that, to finalize the projects, a lot of effort was required to offset the costs of bad habits at the start.</p>
+<p>Roger Peng <span class="citation" data-cites="peng2011">(Peng 2011)</span> has a nice illustration of the replication/reproducibility continuum; it suggests that as more components that enable reproducibility are added to a project, it gets closer to the minimum standard of being fully reproducible. However, my experience is that we could understand the relationship between effort and reproducibility as an S-shaped curve (Figure&nbsp;1). Much effort is required in the beginning to go from zero to, let’s say, 20% on the “reproducibility scale”. Then we reach a zone where we gain a lot, with little extra effort. However, really pushing a project all the way to 100% again requires considerable effort.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-sshape" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sshape-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://dhammarstrom.github.io/posts/sad-story/index_files/figure-html/fig-sshape-1.png" id="fig-sshape" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-sshape-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>I hope the takeaway from the course introduction was that we should aim to do a little better at every opportunity. The aim of the course is to make it easier to do a little better.</p>
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-peng2011" class="csl-entry">
+Peng, R. D. 2011. <span>“Reproducible Research in Computational Science.”</span> <em>Science</em> 334 (6060): 1226–27. <a href="https://doi.org/10.1126/science.1213847">https://doi.org/10.1126/science.1213847</a>.
+</div>
+</div></section></div> ]]></description>
+  <category>teaching</category>
+  <category>notes</category>
+  <guid>https://dhammarstrom.github.io/posts/sad-story/</guid>
+  <pubDate>Thu, 10 Sep 2026 22:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Better, transparent science</title>
+  <dc:creator>Daniel Hammarström</dc:creator>
+  <link>https://dhammarstrom.github.io/posts/good-science/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Today in our department’s weekly lunch seminar, we discussed how to start and finish a scientific paper. My summary of the main topic of discussion is that you just need to decide on a strategy and then start writing. It does not matter whether you start with the abstract, figures, methods, or main results. Ideally, you select a journal before you start writing to be sure that you do not need to revise or restructure before first submission.</p>
+<p>I think that this is, however, secondary to another related point, which is that your paper is only one potential output from your science project. Other outputs could include the dataset and the source code used to generate the paper. These could be combined in a version-controlled repository and made public to be transparent about the whole process.</p>
+<p>Aiming for transparency affects the way you think about preparing your manuscript. Writing traceable source files for the manuscripts invites you to explain how and why you prepared and analyzed the data as you did. To align the manuscript to the source file, you might need to drop some troublesome ideals of scientific writing. One such ideal is the tendency to build a scientific investigation on a (genius) hypothesis. This hypothesis is, of course, formulated in advance of collecting any data and is confirmed in the paper. In reality, many papers lack a formal, detailed pre-data hypothesis. It is probably, in many cases, made up to fit the format of hypothesis-driven research, a practice known as <a href="https://en.wikipedia.org/wiki/HARKing">HARKing</a>.</p>
+<p>In my own work, I think the most important aspect of all this is to aim for small incremental improvements in every project. This is to acknowledge that what I did previously could be improved, and that what I will do next will still not be perfect. Aiming for perfection right away will likely push us towards hiding imperfections, leading to less transparency and more bad science.</p>
+
+
+
+ ]]></description>
+  <category>teaching</category>
+  <category>notes</category>
+  <guid>https://dhammarstrom.github.io/posts/good-science/</guid>
+  <pubDate>Tue, 07 Nov 2023 23:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>A new attempt at a website</title>
+  <dc:creator>Daniel Hammarström</dc:creator>
+  <link>https://dhammarstrom.github.io/posts/a-new-start/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>My previous attempts at maintaining a website have been failures. Why? Probably because the format triggers a non-trivial amount of bad academic habits and feelings like procrastination, focusing on unimportant details, seeking perfection, inferiority complex and so on. Another issue was probably that I (still) do not know who would like to read these notes.</p>
+<p>My new attempt therefore has the following basic rules.</p>
+<ul>
+<li>Write short posts.</li>
+<li>Write for my own memory.</li>
+<li>Add/link stuff that I’ve done.</li>
+<li>Do not over-think posts.</li>
+</ul>
+<p>Great, the first post is done!</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <category>blog</category>
+  <category>notes</category>
+  <guid>https://dhammarstrom.github.io/posts/a-new-start/</guid>
+  <pubDate>Wed, 01 Nov 2023 23:00:00 GMT</pubDate>
+  <media:content url="https://dhammarstrom.github.io/posts/a-new-start/a-new-start.png" medium="image" type="image/png" height="82" width="144"/>
+</item>
+</channel>
+</rss>
